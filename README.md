@@ -7,8 +7,11 @@ Pa11y Dashboard to interfejs sieciowy do automatycznego narzędzia raportowania 
 [![Build status][shield-build]][info-build]
 [![GPL-3.0 licensed][shield-license]][info-license]
 
-![dashboard](https://user-images.githubusercontent.com/6110968/61603347-0bce1000-abf2-11e9-87b2-a53f91d315bb.jpg)
-![results-page](https://user-images.githubusercontent.com/6110968/62183438-05851580-b30f-11e9-9bc4-b6a4823ae9e8.jpg)
+![pulpit](./images/pa11y-pulpit.png)
+![start](./images/pa11y-start.png)
+![wyniki](./images/pa11y-wyniki-00.png)
+![wyniki](./images/pa11y-wyniki-01.png)
+![wyniki - szczegóły](./images/pa11y-wyniki-02.png)
 
 ---
 
