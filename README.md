@@ -1,6 +1,6 @@
 # Pa11y Dashboard, czyli Pulpit Pa11y
 
-Pa11y Dashboard to interfejs sieciowy do narzędzia do raportowania dostępności [Pa11y][pa11y]; co pozwala _skupić_ się na naprawianiu problemów, a nie na ich szukaniu.
+Pa11y Dashboard to interfejs sieciowy do automatycznego narzędzia raportowania dostępności [Pa11y][pa11y]; który pozwala _skupić_ się na naprawianiu problemów, a nie na ich szukaniu.
 
 ![Version][shield-version]
 [![Node.js version support][shield-node]][info-node]
@@ -14,11 +14,11 @@ Pa11y Dashboard to interfejs sieciowy do narzędzia do raportowania dostępnośc
 
 ## Wymagania
 
-Pulpit Pa11y to aplikacja [Node.js][node], która wymaga stabilnej lub LTS wersji Node, obecnie w wersji 12 lub 14.
+Pa11y Dashboard to aplikacja [Node.js][node], która wymaga stabilnej lub LTS wersji Node, obecnie w wersji 12 lub 14.
 
-⚠️ W chwili obecnej Pa11y Dashboard nie działa z Node.js v16. Użyj Node.js 12 lub 14. ⚠️
+⚠️ W chwili obecnej Pa11y Dashboard nie działa z Node.js v16. **Użyj Node.js 12 lub 14**. ⚠️
 
-Pulpit Pa11y wykorzystuje bazę danych [MongoDB][mongo] do przechowywania wyników testów. Baza danych nie musi znajdować się na tym samym serwerze lub komputerze, z którego działa Pulpit Pa11y.
+Pa11y Dashboard wykorzystuje do przechowywania wyników testów bazę danych [MongoDB][mongo]. Baza danych nie musi znajdować się na tym samym serwerze lub komputerze, z którego działa Pa11y Dashboard.
 
 Pa11y Dashboard używa [puppeteer](https://www.npmjs.com/package/puppeteer) do stworzenia bezgłowej instancji przeglądarki Chromium w celu przeprowadzenia testów. W niektórych środowiskach może to wymagać zainstalowania dodatkowych zależności. Na przykład w systemach Debian/Ubuntu może być konieczne zainstalowanie bibliotek `libnss3` i `libgconf-2-4`, aby móc uruchamiać testy na Pa11y Dashboard. Aby uzyskać szczegółowe informacje, jak to zrobić, zapoznaj się z dokumentacją dostawcy.
 
@@ -42,7 +42,7 @@ npm install
 
 Instrukcje dotyczące instalowania i uruchamiania MongoDB wykraczają poza zakres tego dokumentu. W razie wątpliwości zapoznaj się z [instrukcją instalacji MongoDB](https://docs.mongodb.com/manual/installation/) aby uzyskać szczegółowe informacje o tym, jak zainstalować i uruchomić MongoDB w swoim systemie operacyjnym. Poniżej przedstawiono przykład procesu instalacji i konfiguracji systemu macOS.
 
-Pa11y Dashboard korzysta obecnie z wersji 3 sterownika MongoDB Node.js, co oznacza, że [tylko serwery MongoDB w wersji 4.4 lub starszej](https://docs.mongodb.com/drivers/node/current/compatibility/#mongodb-compatibility). Przed próbą uruchomienia Pa11y Dashboard upewnij się, że Twój serwer MongoDB spełnia wymagania.
+Pa11y Dashboard korzysta obecnie z wersji 3 sterownika MongoDB Node.js, co oznacza, że [tylko serwery MongoDB w wersji 4.4 lub starszej są obsługiwane](https://docs.mongodb.com/drivers/node/current/compatibility/#mongodb-compatibility). Przed próbą uruchomienia Pa11y Dashboard upewnij się, że Twój serwer MongoDB spełnia wymagania.
 
 #### Przykładowa instalacja MongoDB dla systemu macOS
 
