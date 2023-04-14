@@ -21,12 +21,12 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 			<div class="row">
 				<div class="col-md-12 col-sm-6 col-xs-12">
 			        <a href="{{mainResult.hrefCsv}}" class="btn-full-width btn btn-default" data-test="download-csv">
-			        	Download CSV <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+			        	Pobierz CSV <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
 			        </a>
 				</div>
 				<div class="col-md-12 col-sm-6 col-xs-12">
 			        <a href="{{mainResult.hrefJson}}" class="btn-full-width btn btn-default" data-test="download-json">
-			        	Download JSON <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+			        	Pobierz JSON <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
 			        </a>
 				</div>
 			</div>
@@ -39,7 +39,7 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 				<div class="date-selector">
 					<div class="btn-group block-level clearfix">
 
-						<h2 class="h3" id="dates-navigation">Select a date to show stats for: <span class="glyphicon glyphicon-calendar"></span></h2>
+						<h2 class="h3" id="dates-navigation">Wybierz datę, aby pokazać statystyki dla: <span class="glyphicon glyphicon-calendar"></span></h2>
 						<nav aria-labelledby="dates-navigation">
 							<ul class="dates-list">
 								{{#results}}
@@ -55,34 +55,34 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 	<div class="row">
 		<div class="col-md-12 col-sm-12 clearfix">
 			<div class="well">
-				<h2 class="crunch-top h3">View results in browser</h2>
-				<p class="crunch-bottom">Pa11y uses HTML_CodeSniffer to find accessibility issues. <a href="http://squizlabs.github.io/HTML_CodeSniffer/">Use their bookmarklet</a> to view results on the page you are testing.</p>
+				<h2 class="crunch-top h3">Wyświetlanie wyników w przeglądarce</h2>
+				<p class="crunch-bottom">Pa11y używa HTML_CodeSniffer do wyszukiwania problemów z dostępnością. <a href="https://www.irdpl.pl/HTML_CodeSniffer/">Skorzystaj z tej zakładki</a>, aby zobaczyć wyniki na stronie, którą testujesz.</p>
 			</div>
 	    </div>
 	</div>
 </div>
 
 <section class="col-md-9" id="top">
-	<h2 id="tabSectionHeading" class="crunch-top">Results</h2>
+	<h2 id="tabSectionHeading" class="crunch-top">Wyniki</h2>
 	<ul class="nav nav-tabs category-list" aria-labelledby="tabSectionHeading" role="tablist">
 		<li class="category-list__item category-list__item_type_error active" aria-selected="true" role="presentation">
 			<a class="category-list__link" id="errors" href="#errors-list" aria-controls="errors-list" role="tab" data-toggle="tab" data-test="task-errors">
-				Errors ( {{mainResult.count.error}} )
+				Błędy ( {{mainResult.count.error}} )
 			</a>
 		</li>
 		<li class="category-list__item category-list__item_type_warning" aria-selected="false" role="presentation">
 			<a class="category-list__link" id="warnings" href="#warnings-list" aria-controls="warnings-list" role="tab" data-toggle="tab" data-test="task-warnings">
-				Warnings ( {{mainResult.count.warning}} )
+				Ostrzeżenia ( {{mainResult.count.warning}} )
 			</a>
 		</li>
 		<li class="category-list__item category-list__item_type_notice" aria-selected="false" role="presentation">
 			<a class="category-list__link" id="notices" href="#notices-list" aria-controls="notices-list" role="tab" data-toggle="tab" data-test="task-notices">
-				Notices ( {{mainResult.count.notice}} )
+				Uwagi ( {{mainResult.count.notice}} )
 			</a>
 		</li>
 		<li class="category-list__item category-list__item_type_ignore" aria-selected="false" role="presentation">
 			<a class="category-list__link" id="ignore" href="#ignore-list" aria-controls="ignore-list" role="tab" data-toggle="tab">
-				Ignored rules ( {{mainResult.ignore.length}} )
+				Zignorowane wymagania ( {{mainResult.ignore.length}} )
 			</a>
 		</li>
 	</ul>
@@ -104,7 +104,7 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 										{{#if ../../isTaskPage}}
 											<form class="ignore-form" action="{{../../../task.hrefIgnore}}" method="post">
 												<input type="hidden" name="rule" value="{{code}}"/>
-												<input type="submit" role="link" class="btn btn-link btn-sm link" value="Ignore rule"/>
+												<input type="submit" role="link" class="btn btn-link btn-sm link" value="Ignoruj wymaganie"/>
 											</form>
 										{{/if}}
 									{{/unless}}
@@ -114,11 +114,11 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 
 						<div class="panel-body">
 							<span class="text">{{message}}</span>
-							<span class="btn btn-xs btn-link link btn-details" data-role="details-collapse" data-toggle="collapse" data-target="#error-index-{{@index}}" aria-expanded="false" aria-controls="error-index-{{@index}}">details</span>
+							<span class="btn btn-xs btn-link link btn-details" data-role="details-collapse" data-toggle="collapse" data-target="#error-index-{{@index}}" aria-expanded="false" aria-controls="error-index-{{@index}}">szczegóły</span>
 
 							<div class="task-details collapse" id="error-index-{{@index}}">
 								{{#if solutions.length}}
-									<div class="subtitle">Solutions:</div>
+									<div class="subtitle">Rozwiązania:</div>
 									<ul class="list-unstyled solutions-list">
 										{{#each solutions}}
 											<li class="list-unstyled__item">
@@ -131,11 +131,11 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 								{{/if}}
 
 								{{#if items.length}}
-									<div class="subtitle">Selectors:</div>
+									<div class="subtitle">Selektory:</div>
 									<ul class="list-unstyled selectors-list">
 										{{#each items}}
 											<li class="list-unstyled__item">
-												<span title="Context" data-role="context-popover" data-toggle="popover" data-content="{{context}}">
+												<span title="Kontekst" data-role="context-popover" data-toggle="popover" data-content="{{context}}">
 													<code class="code">{{selector}}</code>
 												</span>
 											</li>
@@ -147,10 +147,10 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 					</div>
 				{{/mainResult.errors}}
 				<div class="to-top">
-					<a class="link" href="#top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>Back to top</a>
+					<a class="link" href="#top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>Wróć do góry</a>
 				</div>
 			{{else}}
-				<div class="text">Well done! You have 0 errors. <span class="glyphicon glyphicon-ok pull-right" aria-hidden="true"></span></div>
+				<div class="text">Dobra robota! Masz 0 błędów.. <span class="glyphicon glyphicon-ok pull-right" aria-hidden="true"></span></div>
 			{{/if}}
 		</div>
 
@@ -170,7 +170,7 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 										{{#if ../../isTaskPage}}
 											<form class="ignore-form" action="{{../../../task.hrefIgnore}}" method="post">
 												<input type="hidden" name="rule" value="{{code}}"/>
-												<input type="submit" role="link" class="btn btn-link btn-sm link" value="Ignore rule"/>
+												<input type="submit" role="link" class="btn btn-link btn-sm link" value="Ignoruj wymaganie"/>
 											</form>
 										{{/if}}
 									{{/unless}}
@@ -180,11 +180,11 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 
 						<div class="panel-body">
 							<span class="text">{{message}}</span>
-							<span class="btn btn-xs btn-link link btn-details" data-role="details-collapse" data-toggle="collapse" data-target="#warning-index-{{@index}}" aria-expanded="false" aria-controls="warning-index-{{@index}}">details</span>
+							<span class="btn btn-xs btn-link link btn-details" data-role="details-collapse" data-toggle="collapse" data-target="#warning-index-{{@index}}" aria-expanded="false" aria-controls="warning-index-{{@index}}">szczegóły</span>
 
 							<div class="task-details collapse" id="warning-index-{{@index}}">
 								{{#if solutions.length}}
-									<div class="subtitle">Solutions:</div>
+									<div class="subtitle">Rozwiązania:</div>
 									<ul class="list-unstyled solutions-list">
 										{{#each solutions}}
 											<li class="list-unstyled__item">
@@ -197,7 +197,7 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 								{{/if}}
 
 								{{#if items.length}}
-									<div class="subtitle">Selectors:</div>
+									<div class="subtitle">Selektory:</div>
 									<ul class="list-unstyled selectors-list">
 										{{#each items}}
 											<li class="list-unstyled__item">
@@ -213,10 +213,10 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 					</div>
 				{{/mainResult.warnings}}
 				<div class="to-top">
-					<a class="link" href="#top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>Back to top</a>
+					<a class="link" href="#top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>Wróć do góry</a>
 				</div>
 			{{else}}
-				<div class="text">Well done! You have 0 warnings. <span class="glyphicon glyphicon-ok pull-right" aria-hidden="true"></span></div>
+				<div class="text">Dobra robota!!! Masz 0 ostrzeżeń. <span class="glyphicon glyphicon-ok pull-right" aria-hidden="true"></span></div>
 			{{/if}}
 		</div>
 
@@ -236,7 +236,7 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 										{{#if ../../isTaskPage}}
 											<form class="ignore-form" action="{{../../../task.hrefIgnore}}" method="post">
 												<input type="hidden" name="rule" value="{{code}}"/>
-												<input type="submit" role="link" class="btn btn-link btn-sm link" value="Ignore rule"/>
+												<input type="submit" role="link" class="btn btn-link btn-sm link" value="Ignoruj wymaganie"/>
 											</form>
 										{{/if}}
 									{{/unless}}
@@ -246,11 +246,11 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 
 						<div class="panel-body">
 							<span class="text">{{message}}</span>
-							<span class="btn btn-xs btn-link link btn-details" data-role="details-collapse" data-toggle="collapse" data-target="#notice-index-{{@index}}" aria-expanded="false" aria-controls="notice-index-{{@index}}">details</span>
+							<span class="btn btn-xs btn-link link btn-details" data-role="details-collapse" data-toggle="collapse" data-target="#notice-index-{{@index}}" aria-expanded="false" aria-controls="notice-index-{{@index}}">szczegóły</span>
 
 							<div class="task-details collapse" id="notice-index-{{@index}}">
 								{{#if solutions.length}}
-									<div class="subtitle">Solutions:</div>
+									<div class="subtitle">Rozwiązania:</div>
 									<ul class="list-unstyled solutions-list">
 										{{#each solutions}}
 											<li class="list-unstyled__item">
@@ -263,7 +263,7 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 								{{/if}}
 
 								{{#if items.length}}
-									<div class="subtitle">Selectors:</div>
+									<div class="subtitle">Selektory:</div>
 									<ul class="list-unstyled selectors-list">
 										{{#each items}}
 											<li class="list-unstyled__item">
@@ -279,10 +279,10 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 					</div>
 				{{/mainResult.notices}}
 				<div class="to-top">
-					<a class="link" href="#top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>Back to top</a>
+					<a class="link" href="#top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>Wróć do góry</a>
 				</div>
 			{{else}}
-				<div class="text">Well done! You have 0 notices. <span class="glyphicon glyphicon-ok pull-right" aria-hidden="true"></span></div>
+				<div class="text">Dobra robota! Masz 0 uwag. <span class="glyphicon glyphicon-ok pull-right" aria-hidden="true"></span></div>
 			{{/if}}
 		</div>
 
@@ -300,7 +300,7 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 										{{#if ../../isTaskPage}}
 											<form class="ignore-form" action="{{../../../task.hrefUnignore}}" method="post">
 												<input type="hidden" name="rule" value="{{name}}"/>
-												<input type="submit" role="link" class="btn btn-link btn-sm link" value="Unignore rule"/>
+												<input type="submit" role="link" class="btn btn-link btn-sm link" value="Nie ignoruj wymagań"/>
 											</form>
 										{{/if}}
 									{{/unless}}
@@ -316,10 +316,10 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 					</div>
 				{{/mainResult.ignore}}
 				<div class="to-top">
-					<a class="link" href="#top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>Back to top</a>
+					<a class="link" href="#top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>Wróć do góry</a>
 				</div>
 			{{else}}
-				<div class="text">You have no ignored rules.</div>
+				<div class="text">Nie masz ignorowanych wymagań.</div>
 			{{/if}}
 		</div>
 	</div>	

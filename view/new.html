@@ -16,19 +16,19 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 }}
 
 {{#content "title"}}
-	Add a new URL
+	Dodaj URL
 {{/content}}
 
 <form class="col-md-12" action="/new" method="post" data-test="new-url-form">
 
 	<div class="legend">
-		<h1 class="h2 crunch-top">Add a new URL</h1>
+		<h1 class="h2 crunch-top">Dodaj URL</h1>
 	</div>
 
 	{{#error}}
 		<div class="col-md-12 clearfix" data-test="error">
 			<div class="alert alert-danger">
-				<strong>Oh my gosh!</strong>
+				<strong>No, niestety, coś poszło nie tak!</strong>
 				<p>{{.}}</p>
 			</div>
 		</div>
@@ -37,8 +37,8 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 	<div class="form-group clearfix">
 		<div class="row">
 			<div class="col-md-8 col-sm-8 col-xs-10">
-				<label class="control-label" for="new-task-name">Name</label>
-				<input class="form-control" id="new-task-name" type="text" required placeholder="E.g. My Home Page" name="name" value="{{task.name}}"/>
+				<label class="control-label" for="new-task-name">Nazwa</label>
+				<input class="form-control" id="new-task-name" type="text" required placeholder="Np. Moja strona domowa" name="name" value="{{task.name}}"/>
 			</div>
 		</div>
 	</div>
@@ -47,7 +47,7 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 		<div class="row">
 			<div class="col-md-8 col-sm-8 col-xs-10">
 				<label class="control-label" for="new-task-url">URL</label>
-				<input class="form-control" id="new-task-url" type="url" required pattern="https?:\/\/.+" placeholder="E.g. http://mysite.com/" name="url" value="{{task.url}}"/>
+				<input class="form-control" id="new-task-url" type="url" required pattern="https?:\/\/.+" placeholder="Np. https://mojastrona.com/" name="url" value="{{task.url}}"/>
 			</div>
 		</div>
 	</div>
@@ -68,8 +68,8 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 	<div class="form-group clearfix">
 		<div class="row">
 			<div class="col-md-4 col-sm-4 col-xs-6">
-				<label class="control-label" for="new-task-timeout">Timeout (milliseconds)</label>
-				<input class="form-control" id="new-task-timeout" type="text" placeholder="E.g. 30000" name="timeout" value="{{task.timeout}}"/>
+				<label class="control-label" for="new-task-timeout">Limit czasu (milisekundy)</label>
+				<input class="form-control" id="new-task-timeout" type="text" placeholder="Np. 30000" name="timeout" value="{{task.timeout}}"/>
 			</div>
 		</div>
 	</div>
@@ -77,9 +77,9 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 	<div class="form-group clearfix">
 		<div class="row">
 			<div class="col-md-4 col-sm-4 col-xs-6">
-				<label class="control-label" for="new-task-wait">Wait (milliseconds)</label>
-				<input class="form-control" id="new-task-wait" type="text" placeholder="E.g. 3000" name="wait" value="{{task.wait}}" aria-describedby="int3"/>
-				<em id="int3">(Note: default wait time is 0ms)</em>
+				<label class="control-label" for="new-task-wait">Czas oczekiwania (milisekundy)</label>
+				<input class="form-control" id="new-task-wait" type="text" placeholder="Np. 3000" name="wait" value="{{task.wait}}" aria-describedby="int3"/>
+				<em id="int3">(Uwaga: domyślny czas oczekiwania to 0ms)</em>
 			</div>
 		</div>
 	</div>
@@ -88,11 +88,11 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 		<div class="row">
 			<div class="col-md-4 col-sm-4 col-xs-6">
 				<label class="control-label" for="new-task-actions">
-					Task Actions
-					(<a href="https://github.com/pa11y/pa11y#actions">see Pa11y documentation</a>)
+					Akcje
+					(<a href="https://github.com/pa11y/pa11y#actions">zobacz dokumentację Pa11y</a>)
 				</label>
-				<textarea class="form-control" id="new-task-actions" name="actions" aria-describedby="action-detail" placeholder="E.g. Click element #login-button">{{task.actions}}</textarea>
-				<em id="action-detail">(one action per line)</em>
+				<textarea class="form-control" id="new-task-actions" name="actions" aria-describedby="action-detail" placeholder="Np. Click element #login-button">{{task.actions}}</textarea>
+				<em id="action-detail">(jedna akcja w wierszu)</em>
 			</div>
 		</div>
 	</div>
@@ -100,7 +100,7 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 	<div class="form-group clearfix">
 		<div class="row">
 			<div class="col-md-4 col-sm-4 col-xs-6">
-				<label class="control-label" for="new-task-username">Username</label>
+				<label class="control-label" for="new-task-username">Użytkownik</label>
 				<input class="form-control" id="new-task-username" type="text" name="username" value="{{task.username}}"/>
 			</div>
 		</div>
@@ -109,8 +109,8 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 	<div class="form-group clearfix">
 		<div class="row">
 			<div class="col-md-4 col-sm-4 col-xs-6">
-				<label class="control-label" for="new-task-password">Password</label>
-				<input class="form-control" id="new-task-password" type="text" name="password" value="{{task.password}}" aria-describedby="pwd"/> <span id="pwd"><em>(Note: this will be stored and displayed in plain-text - only suitable for use in a secure environment)</em></span>
+				<label class="control-label" for="new-task-password">Hasło</label>
+				<input class="form-control" id="new-task-password" type="text" name="password" value="{{task.password}}" aria-describedby="pwd"/> <span id="pwd"><em>(Uwaga: dane te będą przechowywane i wyświetlane w postaci zwykłego tekstu - nadają się tylko do użytku w bezpiecznym środowisku)</em></span>
 			</div>
 		</div>
 	</div>
@@ -118,9 +118,9 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 	<div class="form-group clearfix">
 		<div class="row">
 			<div class="col-md-4 col-sm-4 col-xs-6">
-				<label class="control-label" for="new-task-headers">HTTP Headers</label>
+				<label class="control-label" for="new-task-headers">Nagłówek HTTP</label>
 				<textarea class="form-control" id="new-task-headers" name="headers" placeholder="Cookie: foo=bar" aria-describedby="int1">{{task.headers}}</textarea>
-				<em id="int1">(As key/value pairs, separated by newlines/colons)</em>
+				<em id="int1">(Jako pary klucz/wartość, oddzielone nowymi liniami/średnikami)</em>
 			</div>
 		</div>
 	</div>
@@ -128,19 +128,19 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 	<div class="form-group clearfix">
 		<div class="row">
 			<div class="col-md-4 col-sm-4 col-xs-6">
-				<label class="control-label" for="new-task-hide-elements">Hide Elements</label>
+				<label class="control-label" for="new-task-hide-elements">Ukryj elementy</label>
 				<input class="form-control" id="new-task-hide-elements" type="text" name="hideElements" value="{{task.hideElements}}" placeholder=".advert, #modal, div[aria-role=presentation]" aria-describedby="int2"/>
-				<em id="int2">(CSS selector)</em>
+				<em id="int2">(selektory CSS)</em>
 			</div>
 		</div>
 	</div>
 
-	<p class="control-label"><b>Ignore these rules</b> <a target="_blank" href="https://github.com/pa11y/pa11y/wiki/HTML-CodeSniffer-Rules">(full list of rules here)</a></p>
+	<p class="control-label"><b>Ignoruj poniższe wymagania</b> <a target="_blank" href="https://github.com/pa11y/pa11y/wiki/HTML-CodeSniffer-Rules">(pełna lista testów tutaj - nie istnieje)</a></p>
 
 	<div class="standards-lists">
 		{{#standards}}
 			<div data-role="standards-list" data-attr="{{title}}" class="form-group">
-				<p class="control-label rules-list-title ruled"><b>{{title}} Rules</b></p>
+				<p class="control-label rules-list-title ruled"><b>Wymagania {{title}}</b></p>
 				<ul class="list-unstyled">
 					{{#rules}}
 						<li>
@@ -155,6 +155,6 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 		{{/standards}}
 	</div>
 
-	<button type="submit" class="btn btn-success">Add URL <span class="glyphicon glyphicon-plus"></span></button>
+	<button type="submit" class="btn btn-success">Dodaj URL <span class="glyphicon glyphicon-plus"></span></button>
 
 </form>

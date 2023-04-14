@@ -14,16 +14,16 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 }}
-{{#content "title"}}Pa11y Dashboard{{/content}}
+{{#content "title"}}Pulpit Pa11y{{/content}}
 
 <div data-control="task-list">
 
   <div class="clearfix">
     <div class="col-md-6 col-md-offset-3 filter-toggle no-js-hide text-center">
-      <label for="task-filter" class="filter-trigger" data-toggle="collapse" data-target="#filter-input">Filter<span class="glyphicon glyphicon-filter"></span>
+      <label for="task-filter" class="filter-trigger" data-toggle="collapse" data-target="#filter-input">Filtr<span class="glyphicon glyphicon-filter"></span>
       </label>
       <div id="filter-input" class="collapse">
-        <input class="form-control" id="task-filter" type="text" data-role="input" placeholder="Type filter term (name or standard)"/>
+        <input class="form-control" id="task-filter" type="text" data-role="input" placeholder="Określ typ filtru (nazwa lub standard)"/>
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
   {{#if siteMessage}}
       <div class="col-md-12 clearfix" data-test="alert">
           <div class="alert alert-info site-message">
-              <h3 class="crunch-top"><span class="pull-left glyphicon glyphicon-exclamation-sign"></span> Important</h3>
+              <h3 class="crunch-top"><span class="pull-left glyphicon glyphicon-exclamation-sign"></span> Ważne</h3>
               <p class="h5">{{siteMessage}}</p>
           </div>
       </div>
@@ -40,9 +40,9 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
   {{#deleted}}
       <div class="col-md-12 clearfix" data-test="alert">
           <div class="alert alert-info">
-              <button data-dismiss="alert" class="close" type="button" aria-label="Close">×</button>
-              <strong>Bye Bye URL</strong>
-              <p>The URL you selected and its associated results have been deleted.</p>
+              <button data-dismiss="alert" class="close" type="button" aria-label="Zamknij">×</button>
+              <strong>Pa Pa URL</strong>
+              <p>Wybrany adres URL i związane z nim wyniki zostały usunięte..</p>
           </div>
       </div>
   {{/deleted}}

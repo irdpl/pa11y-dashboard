@@ -16,15 +16,15 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 }}
 
 {{#content "title"}}
-	Pa11y Dashboard Results for {{task.name}} - ({{task.standard}})
+	Pulpit Pa11y - Wyniki {{task.name}} - ({{task.standard}})
 {{/content}}
 
 {{#added}}
 	<div class="col-md-12 clearfix" data-test="alert">
 		<div class="alert alert-success">
-			<button data-dismiss="alert" class="close" type="button" aria-label="Close">×</button>
+			<button data-dismiss="alert" class="close" type="button" aria-label="Zamknij">×</button>
 			<strong>Whoop whoop!</strong>
-			<p>Your new URL has been added.</p>
+			<p>Nowy adres URL został dodany.</p>
 		</div>
 	</div>
 {{/added}}
@@ -32,11 +32,11 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 {{#running}}
 	<div class="col-md-12 clearfix" data-test="alert">
 		<div class="alert alert-success">
-			<button data-dismiss="alert" class="close" type="button" aria-label="Close">×</button>
-			<strong>New results incoming!</strong>
+			<button data-dismiss="alert" class="close" type="button" aria-label="Zamknij">×</button>
+			<strong>Nadchodzą nowe wyniki!</strong>
 			<p>
-				New results are being generated for this URL in the background.
-				This can take up to a minute to complete.
+				W tle generowane są nowe wyniki dla tego adresu URL.
+				Może to potrwać do minuty.
 			</p>
 		</div>
 	</div>
@@ -45,11 +45,11 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 {{#ruleIgnored}}
 	<div class="col-md-12 clearfix" data-test="alert">
 		<div class="alert alert-success">
-			<button data-dismiss="alert" class="close" type="button" aria-label="Close">×</button>
-			<strong>Rule ignored!</strong>
+			<button data-dismiss="alert" class="close" type="button" aria-label="Zamknij">×</button>
+			<strong>Wymaganie zignorowane!</strong>
 			<p>
-				You've ignored an accessibility rule for this URL.
-				<a href="{{task.hrefRun}}">Click here to generate results with the ignored rule excluded</a>
+				Masz zignorowane wymagania dostępności dla tego adresu URL.
+				<a href="{{task.hrefRun}}">Wybierz to łącze, aby wygenerować wyniki z wyłączoną regułą ignorowania.</a>
 			</p>
 		</div>
 	</div>
@@ -58,11 +58,11 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 {{#ruleUnignored}}
 	<div class="col-md-12 clearfix" data-test="alert">
 		<div class="alert alert-success">
-			<button data-dismiss="alert" class="close" type="button" aria-label="Close">×</button>
-			<strong>Rule unignored!</strong>
+			<button data-dismiss="alert" class="close" type="button" aria-label="Zamknij">×</button>
+			<strong>Bez ignorowanych wymagań!</strong>
 			<p>
-				You've removed an ignored accessibility rule for this URL.
-				<a href="{{task.hrefRun}}">Click here to generate results with the ignored rule included again</a>
+				Usunąłeś zignorowaną regułę dostępności dla tego adresu URL.
+				<a href="{{task.hrefRun}}">Wybierz to łącze, aby ponownie wygenerować wyniki z uwzględnieniem ignorowania wymagań</a>
 			</p>
 		</div>
 	</div>
@@ -83,9 +83,9 @@ along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 {{else}}
 	<div class="col-md-12" data-test="alert">
 		<div class="alert alert-info">
-			<h4>There are no results to show</h4>
-			<p>Pa11y has not been run against this URL yet so there are no results to show.</p>
-			<p><a href="{{task.hrefRun}}">Click here to generate results for this URL</a>.</p>
+			<h4>Nie ma żadnych wyników, by pokazać</h4>
+			<p>Pa11y nie został jeszcze uruchomiony dla tego adresowi URL, więc nie ma żadnych wyników do pokazania..</p>
+			<p><a href="{{task.hrefRun}}">Wybierz to łącze, aby wygenerować wyniki dla tego adresu URL</a>.</p>
 		</div>
 	</div>
 {{/if}}

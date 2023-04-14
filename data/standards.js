@@ -25,464 +25,480 @@ function getStandards() {
 			rules: [
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2',
-					description: 'Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.'
+					description: 'Grafika jest jedyną treścią linku i powinna zostać uzupełniona o tekst alternatywny przedstawiający jego cel.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.H37',
-					description: 'Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.'
+					description: 'Element img nie ma atrybutu alt. Dodaj ten atrybut i wpisz do niego krótki opis grafiki.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.H67.1',
-					description: 'Img element with empty alt text must have absent or empty title attribute.'
+					description: 'Grafika pełni funkcję dekoracyjną, więc zarówno atrybut alt, jak i title powinny być puste.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.H67.2',
-					description: 'Img element is marked so that it is ignored by Assistive Technology.'
+					description: 'Grafika jest oznaczona jako dekoracyjna i będzie ignorowana przez technologie wspomagające np. czytniki ekranu.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image',
-					description: 'Ensure that the img element\'s alt text serves the same purpose and presents the same information as the image.'
+					description: 'Sprawdź, czy opis alternatywny grafiki przekazuje tę samą informację, co grafika.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.H36',
-					description: 'Image submit button missing an alt attribute. Specify a text alternative that describes the button\'s function, using the alt attribute'
+					description: 'Przycisk graficzny nie ma atrybutu alt. Dodaj alt i opisz w nim funkcję przycisku.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Button',
-					description: 'Ensure that the image submit button\'s alt text identifies the purpose of the button.'
+					description: 'Sprawdź, czy tekst alternatywny przycisku prawidłowo opisuje funkcję przycisku.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.H24',
-					description: 'Area element in an image map missing an alt attribute. Each area element must have a text alternative that describes the function of the image map area.'
+					description: 'Element area w graficznej mapie odsyłaczy nie ma atrybutu alt. Każdy taki obszar powinien mieć atrybut alt z tekstem alternatywnym, który odpowiednio opisuje dany obszar.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.H24.2',
-					description: 'Ensure that the area element\'s text alternative serves the same purpose as the part of image map image it references.'
+					description: 'Sprawdź, czy tekst alternatywny elementu area odpowiada jego funkcji lub treści.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74',
-					description: 'If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.'
+					description: 'Jeśli krótki tekst alternatywny nie opisuje wystarczająco treści przekazywanej przez grafikę, dodaj rozszerzony opis bezpośrednio na stronie lub na oddzielnej stronie.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.H2.EG5',
-					description: 'Img element inside a link must not use alt text that duplicates the text content of the link.'
+					description: 'Tekst alternatywny elementu img umieszczonego wewnątrz linku, nie może być taki sam jak tekst samego linku.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.H2.EG4',
-					description: 'Img element inside a link has empty or missing alt text when a link beside it contains link text. Consider combining the links.'
+					description: 'Element img znajdujący się wewnątrz linku nie ma atrybutu alt lub alt jest pusty. Ponieważ w sąsiedztwie znajduje się tekst linku, zaleca się połączenie tych elementów w jedno łącze ze wspólnym opisem.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.H2.EG3',
-					description: 'Img element inside a link must not use alt text that duplicates the content of a text link beside it.'
+					description: 'Element img znajdujący się wewnątrz linku nie może mieć opisu alternatywnego tej samej treści, co tekst linku znajdujący się w jego sąsiedztwie.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.H53',
-					description: 'Object elements must contain a text alternative after all other alternatives are exhausted.'
+					description: 'Element object musi mieć atrybut alt z niepustym opisem alternatywnym, o ile nie został zapewniony żaden inny alternatywny opis tego elementu.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.G94,G92.Object',
-					description: 'Check that short (and if appropriate, long) text alternatives are available for non-text content that serve the same purpose and present the same information.'
+					description: 'Sprawdź, czy dla wszystkich elementów nietekstowych istnieją krótkie lub długie opisy alternatywne i możliwie najdokładniej je opisują.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.H35.3',
-					description: 'Applet elements must contain a text alternative in the element\'s body, for browsers without support for the applet element.'
+					description: 'Applet powinien mieć opis alternatywny wewnątrz znaczników object. Zapewni to alternatywę w przeglądarkach, które nie obsługują elementu applet.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.H35.2',
-					description: 'Applet elements must contain an alt attribute, to provide a text alternative to browsers supporting the element but are unable to load the applet.'
+					description: 'Applet powinien mieć opis alternatywny w atrybucie alt, aby zapewnić wsparcie w przypadku problemów z załadowaniem treści.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_1.1_1_1.G94,G92.Applet',
-					description: 'Check that short (and if appropriate, long) text alternatives are available for non-text content that serve the same purpose and present the same information.'
+					description: 'Sprawdź, czy dla wszystkich elementów nietekstowych istnieją krótkie lub długie opisy alternatywne i możliwie najdokładniej je opisują.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_2.1_2_1.G158',
-					description: 'If this embedded object contains pre-recorded audio only, and is not provided as an alternative for text content, check that an alternative text version is available.'
+					description: 'Jeśli nagranie tylko dźwięk osadzone na stronie nie jest alternatywą dla tekstu, czy istnieje do niego alternatywa tekstowa.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_2.1_2_1.G159,G166',
-					description: 'If this embedded object contains pre-recorded video only, and is not provided as an alternative for text content, check that an alternative text version is available, or an audio track is provided that presents equivalent information.'
+					description: 'Jeśli obiekt wideo (bez dźwięku) osadzony na stronie nie jest alternatywą dla tekstu, sprawdź, czy istnieje do niego alternatywa tekstowa lub ścieżka dźwiękowa prezentująca tę samą treść.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_2.1_2_2.G87,G93',
-					description: 'If this embedded object contains pre-recorded synchronised media and is not provided as an alternative for text content, check that captions are provided for audio content.'
+					description: 'Jeśli obiekt wideo ze ścieżką audio osadzony na stronie nie jest alternatywą dla tekstu, sprawdź, czy ma napisy dla niesłyszących.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_2.1_2_3.G69,G78,G173,G8',
-					description: 'If this embedded object contains pre-recorded synchronised media and is not provided as an alternative for text content, check that an audio description of its video, and/or an alternative text version of the content is provided.'
+					description: 'Jeśli obiekt wideo ze ścieżką audio nie jest alternatywą dla tekstu, sprawdź, czy zawiera dodatkowo audiodeskrypcję i/lub opis alternatywny dla treści przedstawionych wyłącznie w formie obrazu.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H42.2',
-					description: 'Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.'
+					description: 'Nagłówek nie ma treści. Tekst, który nie ma funkcji nagłówka nie powinien być oznaczony znacznikami do określania nagłówków.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H93',
-					description: 'Multiple labels exist with the same "for" attribute. If these labels refer to different form controls, the controls should have unique "id" attributes.'
+					description: 'Wiele elementów label ma taki sam atrybut for. Jeśli te etykiety odnoszą się do różnych kontrolek formularza, kontrolki powinny mieć unikalne atrybuty id.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistent',
-					description: 'This label\'s "for" attribute contains an ID that does not exist in the document.'
+					description: 'Atrybut for elementu label zawiera identyfikator pola, które nie istnieje na stronie.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment',
-					description: 'This label\'s "for" attribute contains an ID that does not exist in the document fragment.'
+					description: 'Atrybut for elementu label zawiera identyfikator pola, które nie istnieje w tym obszarze strony.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NotFormControl',
-					description: 'This label\'s "for" attribute contains an ID that points to an element that is not a form control.'
+					description: 'Atrybut for elementu label zawiera identyfikator, który jest przypisany do elementu niebędącego kontrolką formularza. Sprawdź, czy identyfikator został umieszczony w odpowiednim znaczniku.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NoForAttr',
-					description: 'Label found without a "for" attribute, and therefore not explicitly associated with a form control.'
+					description: 'Element label nie ma atrybutu for. Sprawdź, czy jest jednoznacznie powiązany z kontrolką formularza (czy otacza pole formularza).'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NoId',
-					description: 'Form control does not have an ID, therefore it cannot have an explicit label.'
+					description: 'Kontrolka formularza nie ma atrybutu id, dlatego nie może mieć jawnej etykiety (powiązanej atrybutem for).'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H65.3',
-					description: 'Form control without a label contains an empty title attribute. The title attribute should identify the purpose of the control.'
+					description: 'Kontrolka formularza bez etykiety ma pusty atrybut title. Atrybut title powinien określać przeznaczenie kontrolki.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H65',
-					description: 'Check that the title attribute identifies the purpose of the control, and that a label element is not appropriate.'
+					description: 'Kontrolka formularza ma atrybut title bez treści lub z samymi spacjami. Taki title nie będzie uwzględniany jako prawidłowa etykieta.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H44.2',
-					description: 'Form control does not have an explicit label or title attribute, identifying the purpose of the control.'
+					description: 'Kontrolka formularza nie ma jawnego atrybutu label lub title, który określa przeznaczenie kontrolki.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NoLabelAllowed',
-					description: 'Label element should not be used for this type of form control.'
+					description: 'Element label nie powinien być stosowany w tego typu kontrolce formularza.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H44.1.After',
-					description: 'The label element for this control should be placed after this element.'
+					description: 'Element label dla tej kontrolki powinien być umieszczony za tą kontrolką.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H44.1.Before',
-					description: 'The label element for this control should be placed before this element.'
+					description: 'Element label dla tej kontrolki powinien być umieszczony przed tą kontrolką.'
 				},
 				{
+					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H49.Semantic',
+					description: 'Do oznaczenia tekstu wyróżnionego lub specjalnego powinien zostać użyty odpowiedni znacznik semantyczny, aby można je było określić programowo.'
+				},				
+				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H49.[NodeName]',
-					description: 'Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.'
+					description: 'Do oznaczenia tekstu wyróżnionego lub specjalnego powinien zostać użyty odpowiedni znacznik semantyczny, aby można je było określić programowo.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H49.AlignAttr',
-					description: 'Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.'
+					description: 'Do oznaczenia tekstu wyróżnionego lub specjalnego powinien zostać użyty odpowiedni znacznik. Atrybut align użyty w innych przypadkach niż w celu wyrównania danych w komórkach tabeli jest przestarzały. Użyj arkuszy stylów CSS.'
 				},
 				{
+					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.AlignAttr.Semantic',
+					description: 'Do oznaczenia tekstu wyróżnionego lub specjalnego powinien zostać użyty odpowiedni znacznik. Atrybut align użyty w innych przypadkach niż w celu wyrównania danych w komórkach tabeli jest przestarzały. Użyj arkuszy stylów CSS.'
+				},				
+				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H42',
-					description: 'Heading markup should be used if this content is intended as a heading.'
+					description: 'Jeśli ten fragment treści miał być nagłówkiem, powinny zostać użyte znaczniki nagłówków (h1 – h6).'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H63.3',
-					description: 'Table cell has an invalid scope attribute. Valid values are row, col, rowgroup, or colgroup.'
+					description: 'W komórce tabeli użyto niewłaściwy atrybut scope. Dopuszczalne atrybuty to: row, col, rowgroup i colgroup.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H63.2',
-					description: 'Scope attributes on td elements that act as headers for other elements are obsolete in HTML5. Use a th element instead.'
+					description: 'Atrybuty scope używane dla komórek tabeli (td), aby oznaczyć nagłówek, są przestarzałe w HTML5. Zaleca się skorzystanie ze znacznika th.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H43.ScopeAmbiguous',
-					description: 'Scope attributes on th elements are ambiguous in a table with multiple levels of headings. Use the headers attribute on td elements instead.'
+					description: 'Użycie atrybutów scope dla elementu th jest niejasne w tabeli z wieloma nagłówkami. Zaleca się użycie atrybutu headers w znaczniku td.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H43.IncorrectAttr',
-					description: 'Incorrect headers attribute on this td element. Expected "[expected headers]" but found "[actual headers]"'
+					description: 'Nieprawidłowy atrybut nagłówka w elemencie td. Oczekiwany "[expected headers]", ale znaleziono "[actual headers]"'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H43.HeadersRequired',
-					description: 'The relationship between td elements and their associated th elements is not defined. As this table has multiple levels of th elements, you must use the headers attribute on td elements.'
+					description: 'Nie zdefiniowano relacji pomiędzy komórką td a powiązanym z nią nagłówkiem th. Wskazana tabela ma wiele poziomów th, więc należałoby użyć w komórkach td atrybutu headers.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H43.MissingHeaderIds',
-					description: 'Not all th elements in this table contain an id attribute. These cells should contain ids so that they may be referenced by td elements headers attributes.\''
+					description: 'Nie wszystkie nagłówki th w tej tabeli mają atrybut id i nie będzie się można do nich odwołać za pomocą atrybutu headers w znacznikach td.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H43.MissingHeadersAttrs',
-					description: 'Not all td elements in this table contain a headers attribute. Each headers attribute should list the ids of all th elements associated with that cell.'
+					description: 'Nie wszystkie komórki td w tej tabeli mają atrybut headers. W atrybucie headers powinny znajdować się identyfikatory powiązanych nagłówków.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H43,H63',
-					description: 'The relationship between td elements and their associated th elements is not defined. Use either the scope attribute on th elements, or the headers attribute on td elements.'
+					description: 'Komórki td nie mają ustalonej relacji z komórkami nagłówkowymi th. Należy zdefiniować atrybut scope dla th lub headers dla td.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H63.1',
-					description: 'Not all th elements in this table have a scope attribute. These cells should contain a scope attribute to identify their association with td elements.'
+					description: 'Nie wszystkie komórki th w tej tabeli mają atrybut scope. Ten atrybut pozwala powiązać nagłówki th z odpowiednimi komórkami td.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H39,H73.4',
-					description: 'If this table is a data table, and both a summary attribute and a caption element are present, the summary should not duplicate the caption.'
+					description: 'Jeśli tabela zawiera treści i zastosowano w niej atrybut summary oraz znacznik caption, to treści tego atrybutu i znacznika nie mogą być powielone.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H73.3.Check',
-					description: 'If this table is a data table, check that the summary attribute describes the tables organization or explains how to use the table.\''
+					description: 'Jeśli ta tabela zawiera dane, sprawdź, czy atrybut summary opisuje układ tabeli oraz wyjaśnia, jak jej użyć.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H73.3.NoSummary',
-					description: 'If this table is a data table, consider using the summary attribute of the table element to give an overview of this table.'
+					description: 'Jeśli ta tabela zawiera dane, rozważ użycie atrybutu aria-describedby albo starszego summary, aby opisać układ tabeli i wyjaśnić, jak jej użyć.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H39.3.Check',
-					description: 'If this table is a data table, check that the caption element accurately describes this table.'
+					description: 'Jeśli ta tabela zawiera dane, sprawdź, czy treść podpisu w caption odpowiednio je opisuje.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H39.3.NoCaption',
-					description: 'If this table is a data table, consider using a caption element to the table element to identify this table.'
+					description: 'Jeśli ta tabela zawiera dane, powinna być uzupełniona o podpis w znaczniku caption.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H71.3',
-					description: 'Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.'
+					description: 'Element fieldset nie ma opisu w postaci elementu legend. Wszystkim elementom fieldset powinny towarzyszyć opisy w elementach legend.'
 				},
 				{
+					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H71.NoLegend',
+					description: 'Element fieldset nie ma opisu w postaci elementu legend. Wszystkim elementom fieldset powinny towarzyszyć opisy w elementach legend.'
+				},			
+				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H85.2',
-					description: 'If this selection list contains groups of related options, they should be grouped with optgroup.'
+					description: 'Jeśli elmenty listy wyboru stanowią grupę, powinny być zgrupowane elementem optgroup.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H71.2',
-					description: 'Radio buttons or check boxes with the same name attribute must be contained within a fieldset element.'
+					description: 'Pola opcji (radio) lub pola wyboru (checkobx) z tym samym atrybutem name muszą być umieszczone w elemencie fieldset.'
 				},
 				{
+					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H71.SameName',
+					description: 'Pola opcji (radio) lub pola wyboru (checkobx) z tym samym atrybutem name muszą być umieszczone w elemencie fieldset.'
+				},				
+				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H48.1',
-					description: 'Content appears to have the visual appearance of a bulleted list. It may be appropriate to mark this content up using a ul element.'
+					description: 'Treść przypomina z wyglądu listę nieuporządkowaną. Jeśli jest to lista nieuporządkowana, powinna być oznaczona odpowiednimi znacznikami ul.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H48.2',
-					description: 'Content appears to have the visual appearance of a numbered list. It may be appropriate to mark this content up using an ol element.'
+					description: 'Treść przypomina z wyglądu listę uporządkowaną. Jeśli jest to lista uporządkowana, powinna być oznaczona odpowiednimi znacznikami ol.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.G141',
-					description: 'The heading structure is not logically nested. This [heading] element (should be a [correct heading] to be properly nested / appears to be the primary document heading, so should be an h1 element).'
+					description: 'Nagłówki nie są zagnieżdżone logicznie. Ten element [heading] (powinien być elementem [correct heading], aby był prawidłowo zagnieżdżony. (Wydaje się być głównym nagłówkiem dokumentu, więc powinien być elementem h1).'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H48',
-					description: 'If this element contains a navigation section, it is recommended that it be marked up as a list.'
+					description: 'Jeśli ten element zawiera nawigację, zaleca się, aby został oznaczony jako lista np. przy użyciu listy nieuporządkowanej ul.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_2.G57',
-					description: 'Check that the content is ordered in a meaningful sequence when linearised, such as when style sheets are disabled.'
+					description: 'Struktura i ułożenie elementów powinny oddawać sens strony i informacji. Sprawdź, czy treść jest uporządkowana w sensownej kolejności po linearyzacji, na przykład po wyłączeniu arkuszy stylów.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_3.1_3_3.G96',
-					description: 'Where instructions are provided for understanding the content, do not rely on sensory characteristics alone (such as shape, size or location) to describe objects.'
+					description: 'Sprawdź, czy przekazane instrukcje opierają się także na innych właściwościach niż tylko na cechach postrzegalnych przez zmysły, takich jak kształt, wielkość czy położenie.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_4.1_4_1.G14,G182',
-					description: 'Check that any information conveyed using colour alone is also available in text, or through other visual cues.'
+					description: 'Sprawdź, czy informacje przekazane za pomocą koloru są przedstawione także w inny alternatywny sposób, np. opisane tekstem.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_4.1_4_2.F23',
-					description: 'If any audio plays automatically for longer than 3 seconds, check that there is the ability to pause, stop or mute the audio.'
+					description: 'Jeżeli materiał audio włączany jest automatycznie i trwa dłużej niż trzy sekundy, należy umożliwić zatrzymanie bądź wyciszenie odtwarzania.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_4.1_4_3.F24.BGColour',
-					description: 'Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.'
+					description: 'Sprawdź, czy kolor tekstu odpowiada pod względem wymagań kontrastu kolorowi lub obrazkowi tła.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline1_4.1_4_3.F24.FGColour',
-					description: 'Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.'
+					description: 'Sprawdź, czy kolor tła lub obrazka w tle odpowiada pod względem wymagań kontrastu kolorowi tekstu.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_1.2_1_1.SCR20.DblClick',
-					description: 'Ensure the functionality provided by double-clicking on this element is available through the keyboard.'
+					description: 'Funkcjonalność zapewniona przez dwukrotne kliknięce przyciskiem myszy, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_1.2_1_1.SCR20.MouseOver',
-					description: 'Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.'
+					description: 'Funkcjonalność zapewniona przez najechanie kursorem myszy na element, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_1.2_1_1.SCR20.MouseOut',
-					description: 'Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.'
+					description: 'Funkcjonalność zapewniona przez opuszczenie elementu kursorem myszy, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_1.2_1_1.SCR20.MouseMove',
-					description: 'Ensure the functionality provided by moving the mouse on this element is available through the keyboard.'
+					description: 'Funkcjonalność zapewniona z wykorzystaniem ruchów myszą, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_1.2_1_1.SCR20.MouseDown',
-					description: 'Ensure the functionality provided by mousing down on this element is available through the keyboard; for instance, using the keydown event.'
+					description: 'Funkcjonalność zapewniona przez wciśnięciu przycisku myszy, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_1.2_1_1.SCR20.MouseUp',
-					description: 'Ensure the functionality provided by mousing up on this element is available through the keyboard; for instance, using the keyup event.'
+					description: 'Funkcjonalność zapewniona przez zwolnieniu przycisku myszy, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_1.2_1_2.F10',
-					description: 'Check that this applet or plugin provides the ability to move the focus away from itself when using the keyboard.'
+					description: 'Sprawdź, czy dodatek lub applet pozwalają na uwolnienie fokusu, jeśli przejdzie on do tych funkcjonalności.'
 				},
 				{
 					name: 'WCAG2A.1.Principle1.Guideline2_1.2_1_4.Check',
-					description: 'Check that if a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true: \nTurn off: A mechanism is available to turn the shortcut off;\nRemap: A mechanism is available to remap the shortcut to use one or more non- printable keyboard characters(e.g.Ctrl, Alt, etc);\nActive only on focus: The keyboard shortcut for a user interface component is only active when that component has focus.'
+					description: 'Sprawdź, czy jeśli skrót klawiaturowy jest zaimplementowany w treści przy użyciu tylko znaków literowych (w tym wielkich i małych liter), znaków interpunkcyjnych, cyfr lub symboli, to prawdziwa jest co najmniej jedna z tych sytuacji: \nWyłączanie: Istnieje mechanizm wyłączania skrótu;\nMapowanie: Istnieje mechanizm zmiany mapowania skrótu w celu użycia jednego lub więcej niedrukowalnych znaków klawiatury (np. Ctrl, Alt, itp.);\nAktywny tylko, gdy ma fokus: Skrót klawiaturowy dla komponentu interfejsu użytkownika jest aktywny tylko wtedy, gdy ten komponent ma fokus.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_2.2_2_1.F40.2',
-					description: 'Meta refresh tag used to redirect to another page, with a time limit that is not zero. Users cannot control this time limit.'
+					description: 'Znacznik meta z atrybutem redirect przekierowuje na inną stronę w czesie określonym jako 0. Użytkownicy nie mają kontroli w takim krótkim czasie.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_2.2_2_1.F41.2',
-					description: 'Meta refresh tag used to refresh the current page. Users cannot control the time limit for this refresh.'
+					description: 'Znacznik meta z atrybutem refresh odświeża aktualną stronę. Użytkownicy nie mają kontroli nad tym odświeżaniem.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_2.2_2_2.SCR33,SCR22,G187,G152,G186,G191',
-					description: 'If any part of the content moves, scrolls or blinks for more than 5 seconds, or auto-updates, check that there is a mechanism available to pause, stop, or hide the content.'
+					description: 'Jeśli na stronie znajduje się element, który porusza się, przewija lub mruga dłużej niż 5 sekund lub jest automatycznie aktualizowany, musi istnieć mechanizm, który umożliwia zatrzymanie tego efektu lub ukrycie treści.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_2.2_2_2.F4',
-					description: 'Ensure there is a mechanism available to stop this blinking element in less than five seconds.'
+					description: 'Jeśli ten element miga dłużej niż 5 sekund, sprawdź, czy istnieje mechanizm, który umożliwi zatrzymanie migania lub ukrycie elementu.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_2.2_2_2.F47',
-					description: 'Blink elements cannot satisfy the requirement that blinking information can be stopped within five seconds.'
+					description: 'Elementu blink nie spełnia wymagania, zgodnie z którym miganie można zatrzymać lub ukryć, gdy trwa dłużej niż 5 sekund.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline2_2.2_2_6.Check',
-					description: 'Check that users are warned of the duration of any user inactivity that could cause data loss, unless the data is preserved for more than 20 hours when the user does not take any actions.'
+					description: 'Sprawdź, czy użytkownicy są ostrzegani o czasie trwania każdej bezczynności użytkownika, która może spowodować utratę danych, chyba że dane są przechowywane przez ponad 20 godzin, gdy użytkownik nie podejmuje żadnych działań.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_3.2_3_1.G19,G176',
-					description: 'Check that no component of the content flashes more than three times in any 1-second period, or that the size of any flashing area is sufficiently small.'
+					description: 'Elementy strony nie mogą błyskać częściej niż trzy razy w ciągu 1 sekundy lub obszar migający musi mieć bezpieczny rozmiar.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_4.2_4_1.H64.1',
-					description: 'Iframe element requires a non-empty title attribute that identifies the frame.'
+					description: 'Element iframe musi mieć tytuł. Wypełnij atrybut title i umieść w nim opis ramki.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_4.2_4_1.H64.2',
-					description: 'Check that the title attribute of this element contains text that identifies the frame.'
+					description: 'Sprawdź, czy atrybut title elementu iframe ma tekst, który dokładnie określa treść ramki.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124,H69',
-					description: 'Ensure that any common navigation elements can be bypassed; for instance, by use of skip links, header elements, or ARIA landmark roles.'
+					description: 'Sprawdź, czy użytkownik może pominąć powtarzającą się nawigację. Można to zapewnić przez użycie łączy pomijających, nagłówków lub punktów orientacyjnych.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchId',
-					description: 'This link points to a named anchor "[link target]" within the document, but no anchor exists with that name.'
+					description: 'Ten link wskazuje identyfikator "[link target]", ale takiego identyfikatora w dokumencie nie ma.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchIdFragment2.4.2',
-					description: 'This link points to a named anchor "[link target]" within the document, but no anchor exists with that name in the fragment tested.'
+					description: 'Ten link wskazuje identyfikator "[link target]" w dokumencie, ale takiego identyfikatora w testowanym obszarze nie ma.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_4.2_4_2.H25.1.NoTitleEl',
-					description: 'A title should be provided for the document, using a non-empty title element in the head section.'
+					description: 'Strona nie ma tytułu. Należy dodać do sekcji nagłówkowej strony element title lub wypełnić jego treść.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_4.2_4_2.H25.1.EmptyTitle',
-					description: 'The title element in the head section should be non-empty.'
+					description: 'Element title w sekcji nagłówkowej strony nie może być pusty. Musi mieć treść.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_4.2_4_2.H25.2',
-					description: 'Check that the title element describes the document.'
+					description: 'Sprawdź, czy tekst w elemencie title w sekcji nagłówkowej strony dokładnie opisuje treść strony.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_4.2_4_3.H4.2',
-					description: 'If tabindex is used, check that the tab order specified by the tabindex attributes follows relationships in the content.'
+					description: 'Jeśli został użyte dodatnie wartości atrybutu tabindex, sprawdź, czy podczas nawigacji sekwencyjnej tabulatorem relacje i następstwo treści są zrozumiałe dla użytkownika.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81,H33',
-					description: 'Check that the link text combined with programmatically determined link context, or its title attribute, identifies the purpose of the link.'
+					description: 'Sprawdź, czy tekst linku wraz z programowo określonym kontekstem linku lub treścią w atrybucie title pozwala zrozumieć jego cel lub funkcję.'
 				},
 				{
 					name: 'WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81',
-					description: 'Check that the link text combined with programmatically determined link context identifies the purpose of the link.'
+					description: 'Sprawdź, czy treść linku wraz z programowo określonym kontekstem linku, pozwala na zrozumienie jego celu lub funkcji. Kontekst określony programowo: treść w tym samym akapicie lub tym samym elemencie listy lub w tej samej komórce tabeli, co link, albo w jej nagłówku.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline2_5.2_5_1.Check',
-					description: 'Check that all functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential.'
+					description: 'Sprawdź, czy wszystkie funkcje wykorzystujące do obsługi gesty wielopunktowe lub oparte na ścieżce można obsługiwać za pomocą pojedynczego wskazania bez gestu opartego na ścieżce, chyba że gest wielopunktowy lub oparty na ścieżce jest niezbędny.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline2_5.2_5_2.SinglePointer_Check',
-					description: 'Check that for functionality that can be operated using a single pointer, at least one of the following is true: \nNo Down- Event: The down - event of the pointer is not used to execute any part of the function; \nAbort or Undo: Completion of the function is on the up - event, and a mechanism is available to abort the function before completion or to undo the function after completion; \nUp Reversal: The up - event reverses any outcome of the preceding down - event; \nEssential: Completing the function on the down - event is essential.'
+					description: 'Sprawdź, czy dla funkcjonalności, które mogą być obsługiwane za pomocą pomocą pojedynczego wskazania, przynajmniej jedno z poniższych jest prawdziwe: \nBrak zdarzenia: Dotyk wskaźnikiem lub naciskanie nie wywołuje jakiejkolwiek części zdarzenia; \nPrzerwanie lub cofnięcie: Zdarzenie jest zależne od zwolnienia dotyku lub nacisku i istnieje mechanizm, którym można je przerwać lub cofnąć po zwolnieniu dotyku lub nacisku; \nOdwrócenie zdarzenia: Zwolnienie dotyku lub nacisku cofa wywołane zdarzenie i przywraca stan sprzed zdarzenia; \nIstotne: Dotyk wskaźnikiem lub naciskanie jest niezbędne do wywołania zdarzenia.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline2_5.2_5_2.Mousedown_Check',
-					description: 'This element has an mousedown event listener. Check that for functionality that can be operated using a single pointer, at least one of the following is true: \nNo Down- Event: The down - event of the pointer is not used to execute any part of the function; \nAbort or Undo: Completion of the function is on the up - event, and a mechanism is available to abort the function before completion or to undo the function after completion; \nUp Reversal: The up - event reverses any outcome of the preceding down - event; \nEssential: Completing the function on the down - event is essential.'
+					description: 'Ten element nasłuchuje zdarzeń mousedown (naciśniecie wskaźnika myszy). Sprawdź, czy dla funkcjonalności, które mogą być obsługiwane za pomocą pojedynczego wskazania, przynajmniej jedno z poniższych jest prawdziwe: \nBrak zdarzenia: Dotyk wskaźnikiem lub naciskanie nie wywołuje jakiejkolwiek części zdarzenia; \nPrzerwanie lub cofnięcie: Zdarzenie jest zależne od zwolnienia dotyku lub nacisku i istnieje mechanizm, którym można je przerwać lub cofnąć po zwolnieniu dotyku lub nacisku; \nOdwrócenie zdarzenia: Zwolnienie dotyku lub nacisku cofa wywołane zdarzenie i przywraca stan sprzed zdarzenia; \nIstotne: Dotyk wskaźnikiem lub naciskanie jest niezbędne do wywołania zdarzenia.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline2_5.2_5_2.Touchstart_Check',
-					description: 'This element has a touchstart event listener. Check that for functionality that can be operated using a single pointer, at least one of the following is true: \nNo Down- Event: The down - event of the pointer is not used to execute any part of the function; \nAbort or Undo: Completion of the function is on the up - event, and a mechanism is available to abort the function before completion or to undo the function after completion; \nUp Reversal: The up - event reverses any outcome of the preceding down - event; \nEssential: Completing the function on the down - event is essential.'
+					description: 'Ten element nasłuchuje zdarzeń touchstart. Sprawdź, czy dla funkcjonalności, które mogą być obsługiwane za pomocą pojedynczego wskazania, przynajmniej jedno z poniższych jest prawdziwe: \nBrak zdarzenia: Dotyk wskaźnikiem lub naciskanie nie wywołuje jakiejkolwiek części zdarzenia; \nPrzerwanie lub cofnięcie: Zdarzenie jest zależne od zwolnienia dotyku lub nacisku i istnieje mechanizm, którym można je przerwać lub cofnąć po zwolnieniu dotyku lub nacisku; \nOdwrócenie zdarzenia: Zwolnienie dotyku lub nacisku cofa wywołane zdarzenie i przywraca stan sprzed zdarzenia; \nIstotne: Dotyk wskaźnikiem lub naciskanie jest niezbędne do wywołania zdarzenia.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline2_5.2_5_3_F96.Check',
-					description: 'Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.'
+					description: 'Sprawdź, czy dla komponentów interfejsu użytkownika z etykietami, które zawierają tekst lub obrazy tekstu, nazwa zawiera tekst, który jest prezentowany na ekranie.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline2_5.2_5_3_F96.AccessibleName',
-					description: 'Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.'
+					description: 'Dostępna nazwa tego elementu nie zawiera widocznego tekstu etykiety. Sprawdź, czy dla komponentów interfejsu użytkownika z etykietami, które zawierają tekst lub obrazy tekstu, nazwa zawiera tekst, który jest prezentowany na ekranie.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline2_5.2_5_4.Check',
-					description: 'Check that functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when: \nSupported Interface: The motion is used to operate functionality through an accessibility supported interface; \nEssential: The motion is essential for the function and doing so would invalidate the activity.'
+					description: 'Sprawdź, czy funkcjonalności, które mogą być obsługiwane przez ruch urządzenia lub ruch użytkownika, mogą być również obsługiwane przez elementy interfejsu użytkownika, a reagowanie na ruch może być wyłączone, aby zapobiec przypadkowemu uruchomieniu, z wyjątkiem sytuacji, gdy: \nObsługiwany interfejs: Ruch służy do obsługi funkcjonalności poprzez interfejs obsługiwany przez dostępność; \nIstotny: Ruch jest niezbędny dla funkcjonalności, a jego brak skutkowałoby anulowaniem działania.'
 				},
 				{
 					name: 'WCAG2A.Principle1.Guideline2_5.2_5_4.Devicemotion',
-					description: 'This element has a devicemotion event listener. Check that functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when: \nSupported Interface: The motion is used to operate functionality through an accessibility supported interface; \nEssential: The motion is essential for the function and doing so would invalidate the activity.'
+					description: 'Ten element ma nasłuchiwanie zdarzeń devicemotion (ruch urządzenia). Sprawdź, czy funkcjonalności, które mogą być obsługiwane przez ruch urządzenia lub ruch użytkownika, mogą być również obsługiwane przez elementy interfejsu użytkownika, a reagowanie na ruch może być wyłączone, aby zapobiec przypadkowemu uruchomieniu, z wyjątkiem sytuacji, gdy: \nObsługiwany interfejs: Ruch służy do obsługi funkcjonalności poprzez interfejs obsługiwany przez dostępność; \nIstotny: Ruch jest niezbędny dla funkcjonalności, a jego brak skutkowałoby anulowaniem działania.'
 				},
 				{
 					name: 'WCAG2A.Principle3.Guideline3_1.3_1_1.H57.2',
-					description: 'The html element should have a lang or xml:lang attribute which describes the language of the document.'
+					description: 'Znacznik html musi mieć atrybut lang, który określa język strony.'
 				},
 				{
 					name: 'WCAG2A.Principle3.Guideline3_1.3_1_1.H57.3.Lang',
-					description: 'The language specified in the lang attribute of the document element does not appear to be well-formed.'
+					description: 'Język określony w atrybucie lang nie wydaje się poprawnie sformatowany. Sprawdź w https://datatracker.ietf.org/doc/html/rfc5646'
 				},
 				{
 					name: 'WCAG2A.Principle3.Guideline3_1.3_1_1.H57.3.XmlLang',
-					description: 'The language specified in the xml:lang attribute of the document element does not appear to be well-formed.'
+					description: 'Język określony w atrybucie "xml:lang" nie wydaje się poprawnie sformatowany. Sprawdź w https://datatracker.ietf.org/doc/html/rfc5646'
 				},
 				{
 					name: 'WCAG2A.Principle3.Guideline3_2.3_2_1.G107',
-					description: 'Check that a change of context does not occur when any input field receives focus.'
+					description: 'Sprawdź, czy po przenieseniu fokusu na dany element formularza nie następuje zaskakująca dla użytkownika zmiana kontekstu (np. przeniesienie na inną stronę).'
 				},
 				{
 					name: 'WCAG2A.Principle3.Guideline3_2.3_2_2.H32.2',
-					description: 'Form does not contain a submit button (input type="submit", input type="image", or button type="submit").'
+					description: 'Formularz nie ma przycisku przesyłania (input type="submit", input type="image" albo button type="submit").'
 				},
 				{
 					name: 'WCAG2A.Principle3.Guideline3_3.3_3_1.G83,G84,G85',
-					description: 'If an input error is automatically detected in this form, check that the item(s) in error are identified and the error(s) are described to the user in text.'
+					description: 'Jeśli przy wpisywaniu informacji, błąd zostanie wykryty automatycznie, system powinien wskazać błędny element, a użytkownik otrzymać opis błędu w postaci tekstu.'
 				},
 				{
 					name: 'WCAG2A.Principle3.Guideline3_3.3_3_2.G131,G89,G184,H90',
-					description: 'Check that descriptive labels or instructions (including for required fields) are provided for user input in this form.'
+					description: 'Sprawdź, czy etykiety lub instrukcje kontrolek przeznaczonych na wprowadzenie danych przez użytkownika (w tym wymaganych) mają zrozumiałe objaśnienia i wskazówki. '
 				},
 				{
 					name: 'WCAG2A.Principle4.Guideline4_1.4_1_1.F77',
-					description: 'Duplicate id attribute value "[Element ID]" found on the web page.'
+					description: 'Znaleziono powtórzoną wartość atrybutu "[Element ID]". Dopuszczalne jest jedno wystąpienie wartości identyfikatora.'
 				},
 				{
 					name: 'WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Empty',
-					description: 'Anchor element found with an ID but without a href or link text. Consider moving its ID to a parent or nearby element.'
+					description: 'Link ma atrybut id, nie ma jednak ani adresu w atrybucie href ani treści. Rozważ przeniesienie identyfikatora do elementu nadrzędnego.'
 				},
 				{
 					name: 'WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.EmptyWithName',
-					description: 'Anchor element found with a name attribute but without a href or link text. Consider moving the name attribute to become an ID of a parent or nearby element.'
+					description: 'Link ma atrybut name, ale nie ma ani adresu, ani treści. Rozważ przeniesienie wartości atrybutu name do identyfikatora elementu nadrzędnego jako id.'
 				},
 				{
 					name: 'WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId',
-					description: 'Anchor element found with no link content and no name and/or ID attribute.'
+					description: 'Link nie ma treści, ani nazwy, ani identyfikatora.'
 				},
 				{
 					name: 'WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoHref',
-					description: 'Anchor elements should not be used for defining in-page link targets. If not using the ID for other purposes (such as CSS or scripting), consider moving it to a parent element.'
+					description: 'Link nie powinien być używany do tworzenia wewnętrznych odniesień na stronie. Jeśli identyfikator jest używany do stylów CSS lub oskryptowania JS, rozważ przeniesienie identyfikatora od elementu nadrzędnego (rodzica).'
 				},
 				{
 					name: 'WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder',
-					description: 'Anchor element found with link content, but no href and/or ID attribute has been supplied.'
+					description: 'Link ma jedynie treść. Brakuje adresu w atrybucie href, identyfikatora lub nazwy (atrybutu name).'
 				},
 				{
 					name: 'WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent',
-					description: 'Anchor element found with a valid href attribute, but no link content has been supplied.'
+					description: 'Link ma prawidłowy adres w atrybucie href, ale nie ma treści linku.'
 				},
 				{
-					name: 'WCAG2A.Principle4.Guideline4_1.4_1_2.H91.[NodeName].Name',
-					description: 'This /[element type/] does not have a name available to an accessibility API. Valid names are [valid names for this element].'
+					name: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.[NodeName].Name',
+					description: 'Ten /[element type/] nie ma nazwy dostępnej dla API dostępności. Prawidłowe nazwy to /[valid names for this element/].'
 				},
 				{
-					name: 'WCAG2A.Principle4.Guideline4_1.4_1_2.H91./[NodeName/].Value',
-					description: 'This /[element type/] does not have a value available to an accessibility API. Add one /[using a element-specific method/].'
-				}
+					name: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.[NodeName].Value',
+					description: 'Ten /[element type/] nie ma wartości dostępnej dla API dostępności. Dodaj ją /[using a element-specific method/].'
+				},	
 			]
 		},
 		{
@@ -490,467 +506,487 @@ function getStandards() {
 			rules: [
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2',
-					description: 'Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.'
+					description: 'Grafika jest jedyną treścią linku i powinna zostać uzupełniona o tekst alternatywny przedstawiający jego cel.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.H37',
-					description: 'Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.'
+					description: 'Element img nie ma atrybutu alt. Dodaj ten atrybut i wpisz do niego krótki opis grafiki.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.1',
-					description: 'Img element with empty alt text must have absent or empty title attribute.'
+					description: 'Grafika pełni funkcję dekoracyjną, więc zarówno atrybut alt, jak i title powinny być puste.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2',
-					description: 'Img element is marked so that it is ignored by Assistive Technology.'
+					description: 'Grafika jest oznaczona jako dekoracyjna i będzie ignorowana przez technologie wspomagające np. czytniki ekranu.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.G94.Image',
-					description: 'Ensure that the img element\'s alt text serves the same purpose and presents the same information as the image.'
+					description: 'Sprawdź, czy opis alternatywny grafiki przekazuje tę samą informację, co grafika.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.H36',
-					description: 'Image submit button missing an alt attribute. Specify a text alternative that describes the button\'s function, using the alt attribute'
+					description: 'Przycisk graficzny nie ma atrybutu alt. Dodaj alt i opisz w nim funkcję przycisku.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.G94.Button',
-					description: 'Ensure that the image submit button\'s alt text identifies the purpose of the button.'
+					description: 'Sprawdź, czy tekst alternatywny przycisku prawidłowo opisuje funkcję przycisku.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.H24',
-					description: 'Area element in an image map missing an alt attribute. Each area element must have a text alternative that describes the function of the image map area.'
+					description: 'Element area w graficznej mapie odsyłaczy nie ma atrybutu alt. Każdy taki obszar powinien mieć atrybut alt z tekstem alternatywnym, który odpowiednio opisuje dany obszar.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.H24.2',
-					description: 'Ensure that the area element\'s text alternative serves the same purpose as the part of image map image it references.'
+					description: 'Sprawdź, czy tekst alternatywny elementu area odpowiada jego funkcji lub treści.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74',
-					description: 'If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.'
+					description: 'Jeśli krótki tekst alternatywny nie opisuje wystarczająco treści przekazywanej przez grafikę, dodaj rozszerzony opis bezpośrednio na stronie lub na oddzielnej stronie.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.H2.EG5',
-					description: 'Img element inside a link must not use alt text that duplicates the text content of the link.'
+					description: 'Tekst alternatywny elementu img umieszczonego wewnątrz linku, nie może być taki sam jak tekst samego linku.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.H2.EG4',
-					description: 'Img element inside a link has empty or missing alt text when a link beside it contains link text. Consider combining the links.'
+					description: 'Element img znajdujący się wewnątrz linku nie ma atrybutu alt lub alt jest pusty. Ponieważ w sąsiedztwie znajduje się tekst linku, zaleca się połączenie tych elementów w jedno łącze ze wspólnym opisem.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.H2.EG3',
-					description: 'Img element inside a link must not use alt text that duplicates the content of a text link beside it.'
+					description: 'Element img znajdujący się wewnątrz linku nie może mieć opisu alternatywnego tej samej treści, co tekst linku znajdujący się w jego sąsiedztwie.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.H53',
-					description: 'Object elements must contain a text alternative after all other alternatives are exhausted.'
+					description: 'Element object musi mieć atrybut alt z niepustym opisem alternatywnym, o ile nie został zapewniony żaden inny alternatywny opis tego elementu.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.G94,G92.Object',
-					description: 'Check that short (and if appropriate, long) text alternatives are available for non-text content that serve the same purpose and present the same information.'
+					description: 'Sprawdź, czy dla wszystkich elementów nietekstowych istnieją krótkie lub długie opisy alternatywne i możliwie najdokładniej je opisują.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.H35.3',
-					description: 'Applet elements must contain a text alternative in the element\'s body, for browsers without support for the applet element.'
+					description: 'Applet powinien mieć opis alternatywny wewnątrz znaczników object. Zapewni to alternatywę w przeglądarkach, które nie obsługują elementu applet.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.H35.2',
-					description: 'Applet elements must contain an alt attribute, to provide a text alternative to browsers supporting the element but are unable to load the applet.'
+					description: 'Applet powinien mieć opis alternatywny w atrybucie alt, aby zapewnić wsparcie w przypadku problemów z załadowaniem treści.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.G94,G92.Applet',
-					description: 'Check that short (and if appropriate, long) text alternatives are available for non-text content that serve the same purpose and present the same information.'
+					description: 'Sprawdź, czy dla wszystkich elementów nietekstowych istnieją krótkie lub długie opisy alternatywne i możliwie najdokładniej je opisują.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_2.1_2_1.G158',
-					description: 'If this embedded object contains pre-recorded audio only, and is not provided as an alternative for text content, check that an alternative text version is available.'
+					description: 'Jeśli nagranie tylko dźwięk osadzone na stronie nie jest alternatywą dla tekstu, czy istnieje do niego alternatywa tekstowa.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_2.1_2_1.G159,G166',
-					description: 'If this embedded object contains pre-recorded video only, and is not provided as an alternative for text content, check that an alternative text version is available, or an audio track is provided that presents equivalent information.'
+					description: 'Jeśli obiekt wideo (bez dźwięku) osadzony na stronie nie jest alternatywą dla tekstu, sprawdź, czy istnieje do niego alternatywa tekstowa lub ścieżka dźwiękowa prezentująca tę samą treść.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_2.1_2_2.G87,G93',
-					description: 'If this embedded object contains pre-recorded synchronised media and is not provided as an alternative for text content, check that captions are provided for audio content.'
+					description: 'Jeśli obiekt wideo ze ścieżką audio osadzony na stronie nie jest alternatywą dla tekstu, sprawdź, czy ma napisy dla niesłyszących.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_2.1_2_4.G9,G87,G93',
-					description: 'If this embedded object contains synchronised media, check that captions are provided for live audio content.'
+					description: 'Sprawdź, czy osadzony na stronie obiekt, który zawiera zsynchronizowane media prezentowane na żywo ma napisy dla niesłyszących.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_2.1_2_5.G78,G173,G8',
-					description: 'If this embedded object contains pre-recorded synchronised media, check that an audio description is provided for its video content.'
+					description: 'Sprawdź, czy osadzony na stronie obiekt, który zawiera zsynchronizowane media, ma dołączoną audiodeskrypcję treści wizualnych.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H42.2',
-					description: 'Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.'
+					description: 'Nagłówek nie ma treści. Tekst, który nie ma funkcji nagłówka nie powinien być oznaczony znacznikami do określania nagłówków.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H93',
-					description: 'Multiple labels exist with the same "for" attribute. If these labels refer to different form controls, the controls should have unique "id" attributes.'
+					description: 'Wiele elementów label ma taki sam atrybut for. Jeśli te etykiety odnoszą się do różnych kontrolek formularza, kontrolki powinny mieć unikalne atrybuty id.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H44.NonExistent',
-					description: 'This label\'s "for" attribute contains an ID that does not exist in the document.'
+					description: 'Atrybut for elementu label zawiera identyfikator pola, które nie istnieje na stronie.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment',
-					description: 'This label\'s "for" attribute contains an ID that does not exist in the document fragment.'
+					description: 'Atrybut for elementu label zawiera identyfikator pola, które nie istnieje w tym obszarze strony.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H44.NotFormControl',
-					description: 'This label\'s "for" attribute contains an ID that points to an element that is not a form control.'
+					description: 'Atrybut for elementu label zawiera identyfikator, który jest przypisany do elementu niebędącego kontrolką formularza. Sprawdź, czy identyfikator został umieszczony w odpowiednim znaczniku.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H44.NoForAttr',
-					description: 'Label found without a "for" attribute, and therefore not explicitly associated with a form control.'
+					description: 'Element label nie ma atrybutu for. Sprawdź, czy jest jednoznacznie powiązany z kontrolką formularza (czy otacza pole formularza).'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H44.NoId',
-					description: 'Form control does not have an ID, therefore it cannot have an explicit label.'
+					description: 'Kontrolka formularza nie ma atrybutu id, dlatego nie może mieć jawnej etykiety (powiązanej atrybutem for).'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H65.3',
-					description: 'Form control without a label contains an empty title attribute. The title attribute should identify the purpose of the control.'
+					description: 'Kontrolka formularza bez etykiety ma pusty atrybut title. Atrybut title powinien określać przeznaczenie kontrolki.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H65',
-					description: 'Check that the title attribute identifies the purpose of the control, and that a label element is not appropriate.'
+					description: 'Kontrolka formularza ma atrybut title bez treści lub z samymi spacjami. Taki title nie będzie uwzględniany jako prawidłowa etykieta.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H44.2',
-					description: 'Form control does not have an explicit label or title attribute, identifying the purpose of the control.'
+					description: 'Kontrolka formularza nie ma jawnego atrybutu label lub title, który określa przeznaczenie kontrolki.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H44.NoLabelAllowed',
-					description: 'Label element should not be used for this type of form control.'
+					description: 'Element label nie powinien być stosowany w tego typu kontrolce formularza.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H44.1.After',
-					description: 'The label element for this control should be placed after this element.'
+					description: 'Element label dla tej kontrolki powinien być umieszczony za tą kontrolką.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H44.1.Before',
-					description: 'The label element for this control should be placed before this element.'
+					description: 'Element label dla tej kontrolki powinien być umieszczony przed tą kontrolką.'
 				},
 				{
+					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H49.Semantic',
+					description: 'Do oznaczenia tekstu wyróżnionego lub specjalnego powinien zostać użyty odpowiedni znacznik semantyczny, aby można je było określić programowo.'
+				},						
+				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H49.[NodeName]',
-					description: 'Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.'
+					description: 'Do oznaczenia tekstu wyróżnionego lub specjalnego powinien zostać użyty odpowiedni znacznik semantyczny, aby można je było określić programowo.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H49.AlignAttr',
-					description: 'Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.'
+					description: 'Do oznaczenia tekstu wyróżnionego lub specjalnego powinien zostać użyty odpowiedni znacznik. Atrybut align użyty w innych przypadkach niż w celu wyrównania danych w komórkach tabeli jest przestarzały. Użyj arkuszy stylów CSS.'					
 				},
 				{
+					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.AlignAttr.Semantic',
+					description: 'Do oznaczenia tekstu wyróżnionego lub specjalnego powinien zostać użyty odpowiedni znacznik. Atrybut align użyty w innych przypadkach niż w celu wyrównania danych w komórkach tabeli jest przestarzały. Użyj arkuszy stylów CSS.'
+				},				
+				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H42',
-					description: 'Heading markup should be used if this content is intended as a heading.'
+					description: 'Jeśli ten fragment treści miał być nagłówkiem, powinny zostać użyte znaczniki nagłówków (h1 – h6).'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H63.3',
-					description: 'Table cell has an invalid scope attribute. Valid values are row, col, rowgroup, or colgroup.'
+					description: 'W komórce tabeli użyto niewłaściwy atrybut scope. Dopuszczalne atrybuty to: row, col, rowgroup i colgroup.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H63.2',
-					description: 'Scope attributes on td elements that act as headers for other elements are obsolete in HTML5. Use a th element instead.'
+					description: 'Atrybuty scope używane dla komórek tabeli (td), aby oznaczyć nagłówek, są przestarzałe w HTML5. Zaleca się skorzystanie ze znacznika th.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H43.ScopeAmbiguous',
-					description: 'Scope attributes on th elements are ambiguous in a table with multiple levels of headings. Use the headers attribute on td elements instead.'
+					description: 'Użycie atrybutów scope dla elementu th jest niejasne w tabeli z wieloma nagłówkami. Zaleca się użycie atrybutu headers w znaczniku td.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H43.IncorrectAttr',
-					description: 'Incorrect headers attribute on this td element. Expected "[expected headers]" but found "[actual headers]"'
+					description: 'Nieprawidłowy atrybut nagłówka w elemencie td. Oczekiwany "[expected headers]", ale znaleziono "[actual headers]"'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H43.HeadersRequired',
-					description: 'The relationship between td elements and their associated th elements is not defined. As this table has multiple levels of th elements, you must use the headers attribute on td elements.'
+					description: 'Nie zdefiniowano relacji pomiędzy komórką td a powiązanym z nią nagłówkiem th. Wskazana tabela ma wiele poziomów th, więc należałoby użyć w komórkach td atrybutu headers.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H43.MissingHeaderIds',
-					description: 'Not all th elements in this table contain an id attribute. These cells should contain ids so that they may be referenced by td elements headers attributes.\''
+					description: 'Nie wszystkie nagłówki th w tej tabeli mają atrybut id i nie będzie się można do nich odwołać za pomocą atrybutu headers w znacznikach td.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H43.MissingHeadersAttrs',
-					description: 'Not all td elements in this table contain a headers attribute. Each headers attribute should list the ids of all th elements associated with that cell.'
+					description: 'Nie wszystkie komórki td w tej tabeli mają atrybut headers. W atrybucie headers powinny znajdować się identyfikatory powiązanych nagłówków.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H43,H63',
-					description: 'The relationship between td elements and their associated th elements is not defined. Use either the scope attribute on th elements, or the headers attribute on td elements.'
+					description: 'Komórki td nie mają ustalonej relacji z komórkami nagłówkowymi th. Należy zdefiniować atrybut scope dla th lub headers dla td.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H63.1',
-					description: 'Not all th elements in this table have a scope attribute. These cells should contain a scope attribute to identify their association with td elements.'
+					description: 'Nie wszystkie komórki th w tej tabeli mają atrybut scope. Ten atrybut pozwala powiązać nagłówki th z odpowiednimi komórkami td.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H39,H73.4',
-					description: 'If this table is a data table, and both a summary attribute and a caption element are present, the summary should not duplicate the caption.'
+					description: 'Jeśli tabela zawiera treści i zastosowano w niej atrybut summary oraz znacznik caption, to treści tego atrybutu i znacznika nie mogą być powielone.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H73.3.Check',
-					description: 'If this table is a data table, check that the summary attribute describes the tables organization or explains how to use the table.\''
+					description: 'Jeśli ta tabela zawiera dane, sprawdź, czy atrybut summary opisuje układ tabeli oraz wyjaśnia, jak jej użyć.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H73.3.NoSummary',
-					description: 'If this table is a data table, consider using the summary attribute of the table element to give an overview of this table.'
+					description: 'Jeśli ta tabela zawiera dane, rozważ użycie atrybutu aria-describedby albo starszego summary, aby opisać układ tabeli i wyjaśnić, jak jej użyć.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H39.3.Check',
-					description: 'If this table is a data table, check that the caption element accurately describes this table.'
+					description: 'Jeśli ta tabela zawiera dane, sprawdź, czy treść podpisu w caption odpowiednio je opisuje.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H39.3.NoCaption',
-					description: 'If this table is a data table, consider using a caption element to the table element to identify this table.'
+					description: 'Jeśli ta tabela zawiera dane, powinna być uzupełniona o podpis w znaczniku caption.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H71.3',
-					description: 'Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.'
+					description: 'Element fieldset nie ma opisu w postaci elementu legend. Wszystkim elementom fieldset powinny towarzyszyć opisy w elementach legend.'
 				},
+				{
+					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H71.NoLegend',
+					description: 'Element fieldset nie ma opisu w postaci elementu legend. Wszystkim elementom fieldset powinny towarzyszyć opisy w elementach legend.'
+				},					
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H85.2',
-					description: 'If this selection list contains groups of related options, they should be grouped with optgroup.'
+					description: 'Jeśli elmenty listy wyboru stanowią grupę, powinny być zgrupowane elementem optgroup.'
 				},
 				{
-					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H71.2',
-					description: 'Radio buttons or check boxes with the same name attribute must be contained within a fieldset element.'
+					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H71.2',
+					description: 'Pola opcji (radio) lub pola wyboru (checkobx) z tym samym atrybutem name muszą być umieszczone w elemencie fieldset.'
 				},
+				{
+					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H71.SameName',
+					description: 'Pola opcji (radio) lub pola wyboru (checkobx) z tym samym atrybutem name muszą być umieszczone w elemencie fieldset.'
+				},	
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H48.1',
-					description: 'Content appears to have the visual appearance of a bulleted list. It may be appropriate to mark this content up using a ul element.'
+					description: 'Treść przypomina z wyglądu listę nieuporządkowaną. Jeśli jest to lista nieuporządkowana, powinna być oznaczona odpowiednimi znacznikami ul.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H48.2',
-					description: 'Content appears to have the visual appearance of a numbered list. It may be appropriate to mark this content up using an ol element.'
+					description: 'Treść przypomina z wyglądu listę uporządkowaną. Jeśli jest to lista uporządkowana, powinna być oznaczona odpowiednimi znacznikami ol.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.G141',
-					description: 'The heading structure is not logically nested. This [heading] element (should be a [correct heading] to be properly nested / appears to be the primary document heading, so should be an h1 element).'
+					description: 'Nagłówki nie są zagnieżdżone logicznie. Ten element [heading] (powinien być elementem [correct heading], aby był prawidłowo zagnieżdżony. (Wydaje się być głównym nagłówkiem dokumentu, więc powinien być elementem h1).'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_1.H48',
-					description: 'If this element contains a navigation section, it is recommended that it be marked up as a list.'
+					description: 'Jeśli ten element zawiera nawigację, zaleca się, aby został oznaczony jako lista np. przy użyciu listy nieuporządkowanej ul.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_2.G57',
-					description: 'Check that the content is ordered in a meaningful sequence when linearised, such as when style sheets are disabled.'
+					description: 'Struktura i ułożenie elementów powinny oddawać sens strony i informacji. Sprawdź, czy treść jest uporządkowana w sensownej kolejności po linearyzacji, na przykład po wyłączeniu arkuszy stylów.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_3.G96',
-					description: 'Where instructions are provided for understanding the content, do not rely on sensory characteristics alone (such as shape, size or location) to describe objects.'
+					description: 'Sprawdź, czy przekazane instrukcje opierają się także na innych właściwościach niż tylko na cechach postrzegalnych przez zmysły, takich jak kształt, wielkość czy położenie.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_4.RestrictView',
-					description: 'Check that content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential.'
+					description: 'Sprawdź, czy treść nie ogranicza widoku i działania do jednej orientacji wyświetlania, takiej jak pionowa lub pozioma, chyba że określona orientacja wyświetlania jest niezbędna'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_5_H98.FaultyValue',
-					description: 'This element contains a potentially faulty value in its autocomplete attribute.'
+					description: 'Ten element ma prawdopodobnie błędną wartość w swoim atrybucie autocomplete.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_5_H98.InvalidAutocomplete_Text',
-					description: 'Invalid autocomplete value. Element does not belong to Text control group.'
+					description: 'Niepoprawna wartość autocomplete. Element nie należy do grupy kontrolki Tekst.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_5_H98.InvalidAutocomplete_Multiline',
-					description: 'Invalid autocomplete value. Element does not belong to Multiline control group.'
+					description: 'Niepoprawna wartość autocomplete. Element nie należy do grupy kontrolki Wielowierszowe.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_5_H98.InvalidAutocomplete_Password',
-					description: 'Invalid autocomplete value. Element does not belong to Password control group.'
+					description: 'Niepoprawna wartość autocomplete. Element nie należy do grupy kontrolki Hasło.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_5_H98.InvalidAutocomplete_Url',
-					description: 'Invalid autocomplete value. Element does not belong to Url control group.'
+					description: 'Niepoprawna wartość autocomplete. Element nie należy do grupy kontrolki Url.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_5_H98.InvalidAutocomplete_Telephone',
-					description: 'Invalid autocomplete value. Element does not belong to Telephone control group.'
+					description: 'Niepoprawna wartość autocomplete. Element nie należy do grupy kontrolki Telefon.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_5_H98.InvalidAutocomplete_Numeric',
-					description: 'Invalid autocomplete value. Element does not belong to Numeric control group.'
+					description: 'Niepoprawna wartość autocomplete. Element nie należy do grupy kontrolki Liczba.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_5_H98.InvalidAutocomplete_Month',
-					description: 'Invalid autocomplete value. Element does not belong to Month control group.'
+					description: 'Niepoprawna wartość autocomplete. Element nie należy do grupy kontrolki Miesiąc.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_5_H98.InvalidAutocomplete_Date',
-					description: 'Invalid autocomplete value. Element does not belong to Date control group.'
+					description: 'Niepoprawna wartość autocomplete. Element nie należy do grupy kontrolki Data.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_5_H98.Purpose',
-					description: 'Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.'
+					description: 'Sprawdź, czy pole wprowadzania danych służy celowi określonemu w sekcji Przeznaczenie pól danych w komponentach interfejsu użytkowników (zobacz WCAG 2.1); oraz czy treeść jest zaimplementowana przy użyciu technologii z obsługą określania oczekiwanego znaczenia dla danych wejściowych formularza.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_3.1_3_5_H98.MissingAutocomplete',
-					description: 'This element does not have an autocomplete attribute. If this field collects information about the user, consider adding one to comply with this Success Criterion.'
+					description: 'Ten element nie ma atrybutu autocomplete. Jeśli to pole zbiera informacje o użytkowniku, rozważ jego dodanie, aby spełnić to kryterium sukcesu.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_4.1_4_1.G14,G182',
-					description: 'Check that any information conveyed using colour alone is also available in text, or through other visual cues.'
+					description: 'Sprawdź, czy informacje przekazane za pomocą koloru są przedstawione także w inny alternatywny sposób, np. opisane tekstem.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_4.1_4_2.F23',
-					description: 'If any audio plays automatically for longer than 3 seconds, check that there is the ability to pause, stop or mute the audio.'
+					description: 'Jeżeli materiał audio włączany jest automatycznie i trwa dłużej niż trzy sekundy, należy umożliwić zatrzymanie bądź wyciszenie odtwarzania.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail',
-					description: 'This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of /{value/}. Recommendation: /{colour recommendations/}.'
-				},
+					description: 'Ten element ma niewystarczający kontrast na tym poziomie zgodności. Oczekiwano współczynnika kontrastu co najmniej 4.5:1, ale tekst w tym elemencie ma współczynnik kontrastu /{value/}. Zalecenie: /{colour recommendations/}.'
+				},		
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_4.1_4_3.G145',
-					description: 'This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 3:1, but text in this element has a contrast ratio of /{value/}. Recommendation: /{colour recommendations/}.'
+					description: 'Ten element ma niewystarczający kontrast na tym poziomie zgodności. Oczekiwano współczynnika kontrastu co najmniej 3:1, ale tekst w tym elemencie ma współczynnik kontrastu /{value/}. Zalecenie: /{colour recommendations/}.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_4.1_4_3.G18',
-					description: 'This element\'s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.'
+					description: 'Tekst elementu wyświetlany jest na obrazku. Sprawdź, czy współczynnik kontrastu między tekstem a tłem wynosi co najmniej 4.5:1.'
 				},
 				{
-					name: 'WCAG2AA.Principle1.Guideline1_4.1_4_3.G1451',
-					description: 'This element\'s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.'
+					name: 'WCAG2AA.Principle1.Guideline1_4.1_4_3.G145-1',
+					description: 'Tekst elementu wyświetlany jest na obrazku. Sprawdź, czy współczynnik kontrastu między tekstem a tłem wynosi co najmniej 3:1.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_4.1_4_3.F24.BGColour',
-					description: 'Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.'
+					description: 'Sprawdź, czy kolor tekstu odpowiada pod względem wymagań kontrastu kolorowi lub obrazkowi tła.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_4.1_4_3.F24.FGColour',
-					description: 'Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.'
+					description: 'Sprawdź, czy kolor tła lub obrazka w tle odpowiada pod względem wymagań kontrastu kolorowi tekstu.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_4.1_4_4.G142',
-					description: 'Check that text can be resized without assistive technology up to 200 percent without loss of content or functionality.'
+					description: 'Sprawdź, czy tekst na stronie może być powiększony do 200% bez użycia technologii wspomagających.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_4.1_4_5.G140,C22,C30.AALevel',
-					description: 'If the technologies being used can achieve the visual presentation, check that text is used to convey information rather than images of text, except when the image of text is essential to the information being conveyed, or can be visually customised to the user\'s requirements.'
+					description: 'Sprawdź, czy stosowane technologie pozwalają na użycie tekstu w graficznej formie. Treść powinna być przekazana w formie tekstu, chyba że graficzna forma tekstu jest istotna z punktu widzenia samej informacji, która jest przekazywana.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_4.1_4_10_C32,C31,C33,C38,SCR34,G206.Check',
-					description: 'Check that content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for: \nVertical scrolling content at a width equivalent to 320 CSS pixels;\\n Horizontal scrolling content at a height equivalent to 256 CSS pixels; \nExcept for parts of the content which require two-dimensional layout for usage or meaning.'
+					description: 'Sprawdź, czy treść może być prezentowana bez utraty informacji lub funkcjonalności oraz bez konieczności przewijania w dwóch wymiarach dla: \nTreści przewijanej pionowo przy szerokości równoważnej 320 pikselom CSS; \nTreści przewijanej poziomo przy wysokości równoważnej 256 pikselom CSS; \nZ wyjątkiem części treści, które wymagają układu dwuwymiarowego ze względu na sposób korzystania lub znaczenie.'
 				},
 				{
-					name: 'WCAG2AA.Principle1.Guideline1_4.1_4_10_C32,C31,C33,C38,SCR34,G206.Fixed',
-					description: 'Principle1.Guideline1_4.1_4_10_C32,C31,C33,C38,SCR34,G206.Scrolling'
+					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_10_C32,C31,C33,C38,SCR34,G206.Fixed',
+					description: 'Ten element ma "position: fixed". Może to wymagać przewijania w dwóch wymiarach, co jest uznawane za niespełninie tego kryterium sukcesu.'
 				},
 				{
-					name: 'WCAG2AA.Principle1.Guideline1_4.1_4_10_C32,C31,C33,C38,SCR34,G206.Zoom',
-					description: 'Interfering with a user agents ability to zoom may be a failure of this Success Criterion.'
+					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_10_C32,C31,C33,C38,SCR34,G206.Scrolling',
+					description: 'Tekst wstępnie sformatowany może wymagać przewijania w dwóch wymiarach, co jest uznawane za niespełninie tego kryterium sukcesu.'
+				},				
+				{
+					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_10_C32,C31,C33,C38,SCR34,G206.Zoom',
+					description: 'Zakłócanie możliwości powiększania przez program użytkownika może być niespełniniem tego kryterium sukcesu.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_4.1_4_11_G195,G207,G18,G145,G174,F78.Check',
-					description: 'Check that the visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s): \nUser Interface Components: Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author; \nGraphical Objects: Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.'
+					description: 'Sprawdź, czy wizualna prezentacja poniższych elementów ma współczynnik kontrastu co najmniej 3:1 w stosunku do sąsiadującego koloru(ów): \nKomponenty interfejsu użytkownika: Informacje wizualne wymagane do identyfikacji komponentów i stanów interfejsu użytkownika, z wyjątkiem komponentów nieaktywnych lub gdy wygląd komponentu jest określany przez program użytkownika i nie jest modyfikowany przez autora; \nObiekty graficzne: Części grafiki wymagane do zrozumienia treści, z wyjątkiem sytuacji, gdy szczególna prezentacja grafiki jest niezbędna do przekazania informacji.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_4.1_4_12_C36,C35.Check',
-					description: 'Check that no loss of content or functionality occurs by setting all of the following and by changing no other style property: \nLine height(line spacing) to at least 1.5 times the font size; \nSpacing following paragraphs to at least 2 times the font size; \nLetter spacing(tracking) to at least 0.12 times the font size; \nWord spacing to at least 0.16 times the font size'
+					description: 'Sprawdź, czy nie nastąpi utrata treści lub funkcjonalności, ustawiając wszystkie poniższe elementy i nie zmieniając żadnej innej właściwości stylu: \nWysokość wiersza (odstęp między wierszami) co najmniej 1,5-krotność rozmiaru czcionki; \nOdstępy między akapitami - co najmniej 2-krotność rozmiaru czcionki; \nOdstępy między literami (tracking) - co najmniej 0,12-krotność rozmiaru czcionki; \nOdstępy między wyrazami - co najmniej 0,16 rozmiaru czcionki.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline1_4.1_4_13_F95.Check',
-					description: 'Check that where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true: \nDismissable: A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an input error or does not obscure or replace other content; \nHoverable: If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing; \nPersistent: The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid.'
+					description: 'Sprawdź, czy w przypadku, gdy otrzymanie, a następnie usunięcie najechania wskaźnikiem lub fokusu klawiatury powoduje, że dodatkowa treść staje się widoczna, a następnie ukryta, następujące stwierdzenia są prawdziwe: \nOdrzucone: Istnieje mechanizm umożliwiający odrzucenie dodatkowej treści bez przesuwania wskaźnika myszy lub fokusu klawiatury, chyba że dodatkowa treść przekazuje błąd wprowadzanych danych lub nie przesłania ani nie zastępuje innej treści; \nWskazywane: Jeśli wskaźnik myszy (hover) może wyzwolić dodatkową treść, wówczas wskaźnik może zostać przeniesiony na dodatkową treść bez znikania dodatkowej treści; \nTrwałe: Dodatkowa treść pozostaje widoczna do momentu usunięcia wyzwalacza aktywacji lub fokusu, użytkownik odrzuca go lub jego informacje nie są już ważne.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_1.2_1_1.SCR20.DblClick',
-					description: 'Ensure the functionality provided by double-clicking on this element is available through the keyboard.'
+					description: 'Funkcjonalność zapewniona przez dwukrotne kliknięce przyciskiem myszy, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_1.2_1_1.SCR20.MouseOver',
-					description: 'Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.'
+					description: 'Funkcjonalność zapewniona przez najechanie kursorem myszy na element, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_1.2_1_1.SCR20.MouseOut',
-					description: 'Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.'
+					description: 'Funkcjonalność zapewniona przez opuszczenie elementu kursorem myszy, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_1.2_1_1.SCR20.MouseMove',
-					description: 'Ensure the functionality provided by moving the mouse on this element is available through the keyboard.'
+					description: 'Funkcjonalność zapewniona z wykorzystaniem ruchów myszą, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_1.2_1_1.SCR20.MouseDown',
-					description: 'Ensure the functionality provided by mousing down on this element is available through the keyboard; for instance, using the keydown event.'
+					description: 'Funkcjonalność zapewniona przez wciśnięciu przycisku myszy, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_1.2_1_1.SCR20.MouseUp',
-					description: 'Ensure the functionality provided by mousing up on this element is available through the keyboard; for instance, using the keyup event.'
+					description: 'Funkcjonalność zapewniona przez zwolnieniu przycisku myszy, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_1.2_1_2.F10',
-					description: 'Check that this applet or plugin provides the ability to move the focus away from itself when using the keyboard.'
+					description: 'Sprawdź, czy dodatek lub applet pozwalają na uwolnienie fokusu, jeśli przejdzie on do tych funkcjonalności.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline2_1.2_1_4.Check',
-					description: 'Check that if a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true: \nTurn off: A mechanism is available to turn the shortcut off; \nRemap: A mechanism is available to remap the shortcut to use one or more non- printable keyboard characters(e.g.Ctrl, Alt, etc); \nActive only on focus: The keyboard shortcut for a user interface component is only active when that component has focus.'
+					description: 'Sprawdź, czy jeśli skrót klawiaturowy jest zaimplementowany w treści przy użyciu tylko znaków literowych (w tym wielkich i małych liter), znaków interpunkcyjnych, cyfr lub symboli, to prawdziwa jest co najmniej jedna z tych sytuacji: \nWyłączanie: Istnieje mechanizm wyłączania skrótu;\nMapowanie: Istnieje mechanizm zmiany mapowania skrótu w celu użycia jednego lub więcej niedrukowalnych znaków klawiatury (np. Ctrl, Alt, itp.);\nAktywny tylko, gdy ma fokus: Skrót klawiaturowy dla komponentu interfejsu użytkownika jest aktywny tylko wtedy, gdy ten komponent ma fokus.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_2.2_2_1.F40.2',
-					description: 'Meta refresh tag used to redirect to another page, with a time limit that is not zero. Users cannot control this time limit.'
+					description: 'Znacznik meta z atrybutem redirect przekierowuje na inną stronę w czesie określonym jako 0. Użytkownicy nie mają kontroli w takim krótkim czasie.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_2.2_2_1.F41.2',
-					description: 'Meta refresh tag used to refresh the current page. Users cannot control the time limit for this refresh.'
+					description: 'Znacznik meta z atrybutem refresh odświeża aktualną stronę. Użytkownicy nie mają kontroli nad tym odświeżaniem.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_2.2_2_2.SCR33,SCR22,G187,G152,G186,G191',
-					description: 'If any part of the content moves, scrolls or blinks for more than 5 seconds, or auto-updates, check that there is a mechanism available to pause, stop, or hide the content.'
+					description: 'Jeśli na stronie znajduje się element, który porusza się, przewija lub mruga dłużej niż 5 sekund lub jest automatycznie aktualizowany, musi istnieć mechanizm, który umożliwia zatrzymanie tego efektu lub ukrycie treści.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_2.2_2_2.F4',
-					description: 'Ensure there is a mechanism available to stop this blinking element in less than five seconds.'
+					description: 'Jeśli ten element miga dłużej niż 5 sekund, sprawdź, czy istnieje mechanizm, który umożliwi zatrzymanie migania lub ukrycie elementu.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_2.2_2_2.F47',
-					description: 'Blink elements cannot satisfy the requirement that blinking information can be stopped within five seconds.'
+					description: 'Elementu blink nie spełnia wymagania, zgodnie z którym miganie można zatrzymać lub ukryć, gdy trwa dłużej niż 5 sekund.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline2_2.2_2_6.Check',
-					description: 'Check that users are warned of the duration of any user inactivity that could cause data loss, unless the data is preserved for more than 20 hours when the user does not take any actions.'
+					description: 'Sprawdź, czy użytkownicy są ostrzegani o czasie trwania każdej bezczynności użytkownika, która może spowodować utratę danych, chyba że dane są przechowywane przez ponad 20 godzin, gdy użytkownik nie podejmuje żadnych działań.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_3.2_3_1.G19,G176',
-					description: 'Check that no component of the content flashes more than three times in any 1-second period, or that the size of any flashing area is sufficiently small.'
+					description: 'Elementy strony nie mogą błyskać częściej niż trzy razy w ciągu 1 sekundy lub obszar migający musi mieć bezpieczny rozmiar.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_4.2_4_1.H64.1',
-					description: 'Iframe element requires a non-empty title attribute that identifies the frame.'
+					description: 'Element iframe musi mieć tytuł. Wypełnij atrybut title i umieść w nim opis ramki.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_4.2_4_1.H64.2',
-					description: 'Check that the title attribute of this element contains text that identifies the frame.'
+					description: 'Sprawdź, czy atrybut title elementu iframe ma tekst, który dokładnie określa treść ramki.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124,H69',
-					description: 'Ensure that any common navigation elements can be bypassed; for instance, by use of skip links, header elements, or ARIA landmark roles.'
+					description: 'Sprawdź, czy użytkownik może pominąć powtarzającą się nawigację. Można to zapewnić przez użycie łączy pomijających, nagłówków lub punktów orientacyjnych.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchId',
-					description: 'This link points to a named anchor "[link target]" within the document, but no anchor exists with that name.'
+					description: 'Ten link wskazuje identyfikator "[link target]", ale takiego identyfikatora w dokumencie nie ma.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchIdFragment2.4.2',
-					description: 'This link points to a named anchor "[link target]" within the document, but no anchor exists with that name in the fragment tested.'
+					description: 'Ten link wskazuje identyfikator "[link target]" w dokumencie, ale takiego identyfikatora w testowanym obszarze nie ma.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_4.2_4_2.H25.1.NoTitleEl',
-					description: 'A title should be provided for the document, using a non-empty title element in the head section.'
+					description: 'Strona nie ma tytułu. Należy dodać do sekcji nagłówkowej strony element title lub wypełnić jego treść.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_4.2_4_2.H25.1.EmptyTitle',
-					description: 'The title element in the head section should be non-empty.'
+					description: 'Element title w sekcji nagłówkowej strony nie może być pusty. Musi mieć treść.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_4.2_4_2.H25.2',
-					description: 'Check that the title element describes the document.'
+					description: 'Sprawdź, czy tekst w elemencie title w sekcji nagłówkowej strony dokładnie opisuje treść strony.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_4.2_4_3.H4.2',
-					description: 'If tabindex is used, check that the tab order specified by the tabindex attributes follows relationships in the content.'
+					description: 'Jeśli został użyte dodatnie wartości atrybutu tabindex, sprawdź, czy podczas nawigacji sekwencyjnej tabulatorem relacje i następstwo treści są zrozumiałe dla użytkownika.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81,H33',
-					description: 'Check that the link text combined with programmatically determined link context, or its title attribute, identifies the purpose of the link.'
+					description: 'Sprawdź, czy tekst linku wraz z programowo określonym kontekstem linku lub treścią w atrybucie title pozwala zrozumieć jego cel lub funkcję.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81',
-					description: 'Check that the link text combined with programmatically determined link context identifies the purpose of the link.'
+					description: 'Sprawdź, czy treść linku wraz z programowo określonym kontekstem linku, pozwala na zrozumienie jego celu lub funkcji. Kontekst określony programowo: treść w tym samym akapicie lub tym samym elemencie listy lub w tej samej komórce tabeli, co link, albo w jej nagłówku.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_4.2_4_5.G125,G64,G63,G161,G126,G185',
@@ -958,139 +994,139 @@ function getStandards() {
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_4.2_4_6.G130,G131',
-					description: 'Check that headings and labels describe topic or purpose.'
+					description: 'Sprawdź, czy nagłówki i etykiety  opisują temat lub cel treści.'
 				},
 				{
 					name: 'WCAG2AA.Principle2.Guideline2_4.2_4_7.G149,G165,G195,C15,SCR31',
-					description: 'Check that there is at least one mode of operation where the keyboard focus indicator can be visually located on user interface controls.'
+					description: 'Sprawdź, czy każdy element możliwy do nawigacji za pomocą klawiatury, ma widoczny wskaźnik fokusu klawiatury.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline2_5.2_5_1.Check',
-					description: 'Check that all functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential.'
+					description: 'Sprawdź, czy wszystkie funkcje wykorzystujące do obsługi gesty wielopunktowe lub oparte na ścieżce można obsługiwać za pomocą pojedynczego wskazania bez gestu opartego na ścieżce, chyba że gest wielopunktowy lub oparty na ścieżce jest niezbędny.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline2_5.2_5_2.SinglePointer_Check',
-					description: 'Check that for functionality that can be operated using a single pointer, at least one of the following is true: \nNo Down- Event: The down - event of the pointer is not used to execute any part of the function; \nAbort or Undo: Completion of the function is on the up - event, and a mechanism is available to abort the function before completion or to undo the function after completion; \nUp Reversal: The up - event reverses any outcome of the preceding down - event; \nEssential: Completing the function on the down - event is essential.'
+					description: 'Sprawdź, czy dla funkcjonalności, które mogą być obsługiwane za pomocą pomocą pojedynczego wskazania, przynajmniej jedno z poniższych jest prawdziwe: \nBrak zdarzenia: Dotyk wskaźnikiem lub naciskanie nie wywołuje jakiejkolwiek części zdarzenia; \nPrzerwanie lub cofnięcie: Zdarzenie jest zależne od zwolnienia dotyku lub nacisku i istnieje mechanizm, którym można je przerwać lub cofnąć po zwolnieniu dotyku lub nacisku; \nOdwrócenie zdarzenia: Zwolnienie dotyku lub nacisku cofa wywołane zdarzenie i przywraca stan sprzed zdarzenia; \nIstotne: Dotyk wskaźnikiem lub naciskanie jest niezbędne do wywołania zdarzenia.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline2_5.2_5_2.Mousedown_Check',
-					description: 'This element has an mousedown event listener. Check that for functionality that can be operated using a single pointer, at least one of the following is true: \nNo Down- Event: The down - event of the pointer is not used to execute any part of the function; \nAbort or Undo: Completion of the function is on the up - event, and a mechanism is available to abort the function before completion or to undo the function after completion; \nUp Reversal: The up - event reverses any outcome of the preceding down - event; \nEssential: Completing the function on the down - event is essential.'
+					description: 'Ten element nasłuchuje zdarzeń mousedown (naciśniecie wskaźnika myszy). Sprawdź, czy dla funkcjonalności, które mogą być obsługiwane za pomocą pojedynczego wskazania, przynajmniej jedno z poniższych jest prawdziwe: \nBrak zdarzenia: Dotyk wskaźnikiem lub naciskanie nie wywołuje jakiejkolwiek części zdarzenia; \nPrzerwanie lub cofnięcie: Zdarzenie jest zależne od zwolnienia dotyku lub nacisku i istnieje mechanizm, którym można je przerwać lub cofnąć po zwolnieniu dotyku lub nacisku; \nOdwrócenie zdarzenia: Zwolnienie dotyku lub nacisku cofa wywołane zdarzenie i przywraca stan sprzed zdarzenia; \nIstotne: Dotyk wskaźnikiem lub naciskanie jest niezbędne do wywołania zdarzenia.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline2_5.2_5_2.Touchstart_Check',
-					description: 'This element has a touchstart event listener. Check that for functionality that can be operated using a single pointer, at least one of the following is true: \nNo Down- Event: The down - event of the pointer is not used to execute any part of the function; \nAbort or Undo: Completion of the function is on the up - event, and a mechanism is available to abort the function before completion or to undo the function after completion; \nUp Reversal: The up - event reverses any outcome of the preceding down - event; \nEssential: Completing the function on the down - event is essential.'
+					description: 'Ten element nasłuchuje zdarzeń touchstart. Sprawdź, czy dla funkcjonalności, które mogą być obsługiwane za pomocą pojedynczego wskazania, przynajmniej jedno z poniższych jest prawdziwe: \nBrak zdarzenia: Dotyk wskaźnikiem lub naciskanie nie wywołuje jakiejkolwiek części zdarzenia; \nPrzerwanie lub cofnięcie: Zdarzenie jest zależne od zwolnienia dotyku lub nacisku i istnieje mechanizm, którym można je przerwać lub cofnąć po zwolnieniu dotyku lub nacisku; \nOdwrócenie zdarzenia: Zwolnienie dotyku lub nacisku cofa wywołane zdarzenie i przywraca stan sprzed zdarzenia; \nIstotne: Dotyk wskaźnikiem lub naciskanie jest niezbędne do wywołania zdarzenia.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline2_5.2_5_3_F96.Check',
-					description: 'Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.'
+					description: 'Sprawdź, czy dla komponentów interfejsu użytkownika z etykietami, które zawierają tekst lub obrazy tekstu, nazwa zawiera tekst, który jest prezentowany na ekranie.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline2_5.2_5_3_F96.AccessibleName',
-					description: 'Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.'
+					description: 'Dostępna nazwa tego elementu nie zawiera widocznego tekstu etykiety. Sprawdź, czy dla komponentów interfejsu użytkownika z etykietami, które zawierają tekst lub obrazy tekstu, nazwa zawiera tekst, który jest prezentowany na ekranie.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline2_5.2_5_4.Check',
-					description: 'Check that functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when: \nSupported Interface: The motion is used to operate functionality through an accessibility supported interface; \nEssential: The motion is essential for the function and doing so would invalidate the activity.'
+					description: 'Sprawdź, czy funkcjonalności, które mogą być obsługiwane przez ruch urządzenia lub ruch użytkownika, mogą być również obsługiwane przez elementy interfejsu użytkownika, a reagowanie na ruch może być wyłączone, aby zapobiec przypadkowemu uruchomieniu, z wyjątkiem sytuacji, gdy: \nObsługiwany interfejs: Ruch służy do obsługi funkcjonalności poprzez interfejs obsługiwany przez dostępność; \nIstotny: Ruch jest niezbędny dla funkcjonalności, a jego brak skutkowałoby anulowaniem działania.'
 				},
 				{
 					name: 'WCAG2AA.Principle1.Guideline2_5.2_5_4.Devicemotion',
-					description: 'WCAG2AA.This element has a devicemotion event listener. Check that functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when: \nSupported Interface: The motion is used to operate functionality through an accessibility supported interface; \nEssential: The motion is essential for the function and doing so would invalidate the activity.'
+					description: 'Ten element ma nasłuchiwanie zdarzeń devicemotion (ruch urządzenia). Sprawdź, czy funkcjonalności, które mogą być obsługiwane przez ruch urządzenia lub ruch użytkownika, mogą być również obsługiwane przez elementy interfejsu użytkownika, a reagowanie na ruch może być wyłączone, aby zapobiec przypadkowemu uruchomieniu, z wyjątkiem sytuacji, gdy: \nObsługiwany interfejs: Ruch służy do obsługi funkcjonalności poprzez interfejs obsługiwany przez dostępność; \nIstotny: Ruch jest niezbędny dla funkcjonalności, a jego brak skutkowałoby anulowaniem działania.'
 				},
 				{
 					name: 'WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2',
-					description: 'The html element should have a lang or xml:lang attribute which describes the language of the document.'
+					description: 'Znacznik html musi mieć atrybut lang, który określa język strony.'
 				},
 				{
 					name: 'WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.3.Lang',
-					description: 'The language specified in the lang attribute of the document element does not appear to be well-formed.'
+					description: 'Język określony w atrybucie lang nie wydaje się poprawnie sformatowany. Sprawdź w https://datatracker.ietf.org/doc/html/rfc5646'
 				},
 				{
 					name: 'WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.3.XmlLang',
-					description: 'The language specified in the xml:lang attribute of the document element does not appear to be well-formed.'
+					description: 'Język określony w atrybucie "xml:lang" nie wydaje się poprawnie sformatowany. Sprawdź w https://datatracker.ietf.org/doc/html/rfc5646'
 				},
 				{
 					name: 'WCAG2AA.Principle3.Guideline3_1.3_1_2.H58',
-					description: 'Ensure that any change in language is marked using the lang and/or xml:lang attribute on an element, as appropriate.'
+					description: 'Każda zmiana języka w treściach strony powinna być oznaczona atrybutem lang lub xml:lang.'
 				},
 				{
 					name: 'WCAG2AA.Principle3.Guideline3_1.3_1_2.H58.1.Lang',
-					description: 'The language specified in the lang attribute of this element does not appear to be well-formed.'
+					description: 'Język określony w atrybucie lang tego elementu nie wydaje się poprawnie sformatowany. Sprawdź w https://datatracker.ietf.org/doc/html/rfc5646'
 				},
 				{
 					name: 'WCAG2AA.Principle3.Guideline3_1.3_1_2.H58.1.XmlLang',
-					description: 'The language specified in the xml:lang attribute of this element does not appear to be well-formed.'
+					description: 'Język określony w atrybucie xml:lang tego elementu nie wydaje się poprawnie sformatowany. Sprawdź w https://datatracker.ietf.org/doc/html/rfc5646'
 				},
 				{
 					name: 'WCAG2AA.Principle3.Guideline3_2.3_2_1.G107',
-					description: 'Check that a change of context does not occur when any input field receives focus.'
+					description: 'Sprawdź, czy po przenieseniu fokusu na dany element formularza nie następuje zaskakująca dla użytkownika zmiana kontekstu (np. przeniesienie na inną stronę).'
 				},
 				{
 					name: 'WCAG2AA.Principle3.Guideline3_2.3_2_2.H32.2',
-					description: 'Form does not contain a submit button (input type="submit", input type="image", or button type="submit").'
+					description: 'Formularz nie ma przycisku przesyłania (input type="submit", input type="image" albo button type="submit").'
 				},
 				{
 					name: 'WCAG2AA.Principle3.Guideline3_2.3_2_3.G61',
-					description: 'Check that navigational mechanisms that are repeated on multiple Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.'
+					description: 'Sprawdź, czy powtarzające się na stronach elementy nawigacyjne są umieszczone w tej samej kolejności. Dopuszczalna jest zmiana kolejności przez samego użytkownika.'
 				},
 				{
 					name: 'WCAG2AA.Principle3.Guideline3_2.3_2_4.G197',
-					description: 'Check that components that have the same functionality within this Web page are identified consistently in the set of Web pages to which it belongs.'
+					description: 'Elementy, które mają tę samą funkcjonalność, muszą być oznaczone w ten sam sposób na wszystkich stronach internetowych.'
 				},
 				{
 					name: 'WCAG2AA.Principle3.Guideline3_3.3_3_1.G83,G84,G85',
-					description: 'If an input error is automatically detected in this form, check that the item(s) in error are identified and the error(s) are described to the user in text.'
+					description: 'Jeśli przy wpisywaniu informacji, błąd zostanie wykryty automatycznie, system powinien wskazać błędny element, a użytkownik otrzymać opis błędu w postaci tekstu.'
 				},
 				{
 					name: 'WCAG2AA.Principle3.Guideline3_3.3_3_2.G131,G89,G184,H90',
-					description: 'Check that descriptive labels or instructions (including for required fields) are provided for user input in this form.'
+					description: 'Sprawdź, czy etykiety lub instrukcje kontrolek przeznaczonych na wprowadzenie danych przez użytkownika (w tym wymaganych) mają zrozumiałe objaśnienia i wskazówki. '
 				},
 				{
 					name: 'WCAG2AA.Principle3.Guideline3_3.3_3_3.G177',
-					description: 'Check that this form provides suggested corrections to errors in user input, unless it would jeopardize the security or purpose of the content.'
+					description: 'Jeśli przy wpisywaniu informacji automatycznie zostanie wykryty błąd, użytkownik powinien otrzymać sugestię korekty, chyba że wpłynie to negatywnie na bezpieczeństwo systemu.'
 				},
 				{
 					name: 'WCAG2AA.Principle3.Guideline3_3.3_3_4.G98,G99,G155,G164,G168.LegalForms',
-					description: 'If this form would bind a user to a financial or legal commitment, modify/delete user-controllable data, or submit test responses, ensure that submissions are either reversible, checked for input errors, and/or confirmed by the user.'
+					description: 'Sprawdź, czy użytkownik może sprawdzić i zmienić informacje wprowadzone w formularzu, zanim ostatecznie potwierdzi jego wysłanie. Jest to szczególnie ważne w sytuacji, gdy użytkownik podaje informacje prawne lub finansowe.'
 				},
 				{
 					name: 'WCAG2AA.Principle4.Guideline4_1.4_1_1.F77',
-					description: 'Duplicate id attribute value "[Element ID]" found on the web page.'
+					description: 'Znaleziono powtórzoną wartość atrybutu "[Element ID]". Dopuszczalne jest jedno wystąpienie wartości identyfikatora.'
 				},
 				{
 					name: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.Empty',
-					description: 'Anchor element found with an ID but without a href or link text. Consider moving its ID to a parent or nearby element.'
+					description: 'Link ma atrybut id, nie ma jednak ani adresu w atrybucie href ani treści. Rozważ przeniesienie identyfikatora do elementu nadrzędnego.'
 				},
 				{
 					name: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyWithName',
-					description: 'Anchor element found with a name attribute but without a href or link text. Consider moving the name attribute to become an ID of a parent or nearby element.'
+					description: 'Link ma atrybut name, ale nie ma ani adresu, ani treści. Rozważ przeniesienie wartości atrybutu name do identyfikatora elementu nadrzędnego jako id.'
 				},
 				{
 					name: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId',
-					description: 'Anchor element found with no link content and no name and/or ID attribute.'
+					description: 'Link nie ma treści, ani nazwy, ani identyfikatora.'
 				},
 				{
 					name: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoHref',
-					description: 'Anchor elements should not be used for defining in-page link targets. If not using the ID for other purposes (such as CSS or scripting), consider moving it to a parent element.'
+					description: 'Link nie powinien być używany do tworzenia wewnętrznych odniesień na stronie. Jeśli identyfikator jest używany do stylów CSS lub oskryptowania JS, rozważ przeniesienie identyfikatora od elementu nadrzędnego (rodzica).'
 				},
 				{
 					name: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder',
-					description: 'Anchor element found with link content, but no href and/or ID attribute has been supplied.'
+					description: 'Link ma jedynie treść. Brakuje adresu w atrybucie href, identyfikatora lub nazwy (atrybutu name).'
 				},
 				{
 					name: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent',
-					description: 'Anchor element found with a valid href attribute, but no link content has been supplied.'
+					description: 'Link ma prawidłowy adres w atrybucie href, ale nie ma treści linku.'
 				},
 				{
 					name: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.[NodeName].Name',
-					description: 'This [element type] does not have a name available to an accessibility API. Valid names are [valid names for this element].'
+					description: 'Ten /[element type/] nie ma nazwy dostępnej dla API dostępności. Prawidłowe nazwy to /[valid names for this element/].'
 				},
 				{
 					name: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.[NodeName].Value',
-					description: 'This [element type] does not have a value available to an accessibility API. Add one [using a element-specific method].'
-				},
+					description: 'Ten /[element type/] nie ma wartości dostępnej dla API dostępności. Dodaj ją /[using a element-specific method/].'
+				},	
 				{
 					name: 'WCAG2AA.Principle1.Guideline4_1.4_1_3_ARIA22,G199,ARIA19,G83,G84,G85,G139,G177,G194,ARIA23.Check',
-					description: 'Check that status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus.'
+					description: 'Sprawdź, czy komunikaty o stanie mogą być programowo określane poprzez rolę lub właściwości, tak aby mogły być prezentowane użytkownikowi przez technologie wspomagające bez otrzymywania fokusu.'
 				}
 			]
 		},
@@ -1099,447 +1135,468 @@ function getStandards() {
 			rules: [
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.H30.2',
-					description: 'Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.'
+					description: 'Grafika jest jedyną treścią linku i powinna zostać uzupełniona o tekst alternatywny przedstawiający jego cel.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37',
-					description: 'Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.'
+					description: 'Element img nie ma atrybutu alt. Dodaj ten atrybut i wpisz do niego krótki opis grafiki.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.H67.1',
-					description: 'Img element with empty alt text must have absent or empty title attribute.'
+					description: 'Grafika pełni funkcję dekoracyjną, więc zarówno atrybut alt, jak i title powinny być puste.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.H67.2',
-					description: 'Img element is marked so that it is ignored by Assistive Technology.'
+					description: 'Grafika jest oznaczona jako dekoracyjna i będzie ignorowana przez technologie wspomagające np. czytniki ekranu.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.G94.Image',
-					description: 'Ensure that the img element\'s alt text serves the same purpose and presents the same information as the image.'
+					description: 'Sprawdź, czy opis alternatywny grafiki przekazuje tę samą informację, co grafika.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.H36',
-					description: 'Image submit button missing an alt attribute. Specify a text alternative that describes the button\'s function, using the alt attribute'
+					description: 'Przycisk graficzny nie ma atrybutu alt. Dodaj alt i opisz w nim funkcję przycisku.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.G94.Button',
-					description: 'Ensure that the image submit button\'s alt text identifies the purpose of the button.'
+					description: 'Sprawdź, czy tekst alternatywny przycisku prawidłowo opisuje funkcję przycisku.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.H24',
-					description: 'Area element in an image map missing an alt attribute. Each area element must have a text alternative that describes the function of the image map area.'
+					description: 'Element area w graficznej mapie odsyłaczy nie ma atrybutu alt. Każdy taki obszar powinien mieć atrybut alt z tekstem alternatywnym, który odpowiednio opisuje dany obszar.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.H24.2',
-					description: 'Ensure that the area element\'s text alternative serves the same purpose as the part of image map image it references.'
+					description: 'Sprawdź, czy tekst alternatywny elementu area odpowiada jego funkcji lub treści.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.G73,G74',
-					description: 'If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.'
+					description: 'Jeśli krótki tekst alternatywny nie opisuje wystarczająco treści przekazywanej przez grafikę, dodaj rozszerzony opis bezpośrednio na stronie lub na oddzielnej stronie.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.H2.EG5',
-					description: 'Img element inside a link must not use alt text that duplicates the text content of the link.'
+					description: 'Tekst alternatywny elementu img umieszczonego wewnątrz linku, nie może być taki sam jak tekst samego linku.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.H2.EG4',
-					description: 'Img element inside a link has empty or missing alt text when a link beside it contains link text. Consider combining the links.'
+					description: 'Element img znajdujący się wewnątrz linku nie ma atrybutu alt lub alt jest pusty. Ponieważ w sąsiedztwie znajduje się tekst linku, zaleca się połączenie tych elementów w jedno łącze ze wspólnym opisem.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.H2.EG3',
-					description: 'Img element inside a link must not use alt text that duplicates the content of a text link beside it.'
+					description: 'Element img znajdujący się wewnątrz linku nie może mieć opisu alternatywnego tej samej treści, co tekst linku znajdujący się w jego sąsiedztwie.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.H53',
-					description: 'Object elements must contain a text alternative after all other alternatives are exhausted.'
+					description: 'Element object musi mieć atrybut alt z niepustym opisem alternatywnym, o ile nie został zapewniony żaden inny alternatywny opis tego elementu.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.G94,G92.Object',
-					description: 'Check that short (and if appropriate, long) text alternatives are available for non-text content that serve the same purpose and present the same information.'
+					description: 'Sprawdź, czy dla wszystkich elementów nietekstowych istnieją krótkie lub długie opisy alternatywne i możliwie najdokładniej je opisują.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.H35.3',
-					description: 'Applet elements must contain a text alternative in the element\'s body, for browsers without support for the applet element.'
+					description: 'Applet powinien mieć opis alternatywny wewnątrz znaczników object. Zapewni to alternatywę w przeglądarkach, które nie obsługują elementu applet.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.H35.2',
-					description: 'Applet elements must contain an alt attribute, to provide a text alternative to browsers supporting the element but are unable to load the applet.'
+					description: 'Applet powinien mieć opis alternatywny w atrybucie alt, aby zapewnić wsparcie w przypadku problemów z załadowaniem treści.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_1.1_1_1.G94,G92.Applet',
-					description: 'Check that short (and if appropriate, long) text alternatives are available for non-text content that serve the same purpose and present the same information.'
+					description: 'Sprawdź, czy dla wszystkich elementów nietekstowych istnieją krótkie lub długie opisy alternatywne i możliwie najdokładniej je opisują.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_2.1_2_1.G158',
-					description: 'If this embedded object contains pre-recorded audio only, and is not provided as an alternative for text content, check that an alternative text version is available.'
+					description: 'Jeśli nagranie tylko dźwięk osadzone na stronie nie jest alternatywą dla tekstu, czy istnieje do niego alternatywa tekstowa.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_2.1_2_1.G159,G166',
-					description: 'If this embedded object contains pre-recorded video only, and is not provided as an alternative for text content, check that an alternative text version is available, or an audio track is provided that presents equivalent information.'
+					description: 'Jeśli obiekt wideo (bez dźwięku) osadzony na stronie nie jest alternatywą dla tekstu, sprawdź, czy istnieje do niego alternatywa tekstowa lub ścieżka dźwiękowa prezentująca tę samą treść.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_2.1_2_2.G87,G93',
-					description: 'If this embedded object contains pre-recorded synchronised media and is not provided as an alternative for text content, check that captions are provided for audio content.'
+					description: 'Jeśli obiekt wideo ze ścieżką audio osadzony na stronie nie jest alternatywą dla tekstu, sprawdź, czy ma napisy dla niesłyszących.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_2.1_2_4.G9,G87,G93',
-					description: 'If this embedded object contains synchronised media, check that captions are provided for live audio content.'
+					description: 'Sprawdź, czy osadzony na stronie obiekt, który zawiera zsynchronizowane media prezentowane na żywo ma napisy dla niesłyszących.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_2.1_2_5.G78,G173,G8',
-					description: 'If this embedded object contains pre-recorded synchronised media, check that an audio description is provided for its video content.'
+					description: 'Sprawdź, czy osadzony na stronie obiekt, który zawiera zsynchronizowane media, ma dołączoną audiodeskrypcję treści wizualnych.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_2.1_2_6.G54,G81',
-					description: 'If this embedded object contains pre-recorded synchronised media, check that a sign language interpretation is provided for its audio.'
+					description: 'Sprawdź, czy osadzony na stronie obiekt, który zawiera nagrane zsynchronizowane media, ma dołączone tłumaczenie treści dźwiękowych na język migowy.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_2.1_2_7.G8',
-					description: 'If this embedded object contains synchronised media, and where pauses in foreground audio is not sufficient to allow audio descriptions to convey the sense of pre-recorded video, check that an extended audio description is provided, either through scripting or an alternate version.'
+					description: 'Jeśli osadzony na stronie obiekt, który zawiera nagrane zsynchronizowane media, nie ma wystarczających pauz, by uzupełnić go o audiodeskrypcję, sprawdź, czy zamieszczona jest alternatywna wersja lub rozszerzona ścieżka dźwiękowa.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_2.1_2_8.G69,G159',
-					description: 'If this embedded object contains pre-recorded synchronised media or video-only content, check that an alternative text version of the content is provided.'
+					description: 'Sprawdź, czy osadzony na stronie obiekt, który zawiera nagrane zsynchronizowane media lub tylko wideo, ma alternatywną tekstową wersję treści.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_2.1_2_9.G150,G151,G157',
-					description: 'If this embedded object contains live audio-only content, check that an alternative text version of the content is provided.'
+					description: 'Sprawdź, czy osadzony na stronie obiekt, który zawiera tylko dźwięk transmitowany na żywo, ma alternatywną tekstową wersję treści.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H42.2',
-					description: 'Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.'
+					description: 'Nagłówek nie ma treści. Tekst, który nie ma funkcji nagłówka nie powinien być oznaczony znacznikami do określania nagłówków.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H93',
-					description: 'Multiple labels exist with the same "for" attribute. If these labels refer to different form controls, the controls should have unique "id" attributes.'
+					description: 'Wiele elementów label ma taki sam atrybut for. Jeśli te etykiety odnoszą się do różnych kontrolek formularza, kontrolki powinny mieć unikalne atrybuty id.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistent',
-					description: 'This label\'s "for" attribute contains an ID that does not exist in the document.'
+					description: 'Atrybut for elementu label zawiera identyfikator pola, które nie istnieje na stronie.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment',
-					description: 'This label\'s "for" attribute contains an ID that does not exist in the document fragment.'
+					description: 'Atrybut for elementu label zawiera identyfikator pola, które nie istnieje w tym obszarze strony.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NotFormControl',
-					description: 'This label\'s "for" attribute contains an ID that points to an element that is not a form control.'
+					description: 'Atrybut for elementu label zawiera identyfikator, który jest przypisany do elementu niebędącego kontrolką formularza. Sprawdź, czy identyfikator został umieszczony w odpowiednim znaczniku.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NoForAttr',
-					description: 'Label found without a "for" attribute, and therefore not explicitly associated with a form control.'
+					description: 'Element label nie ma atrybutu for. Sprawdź, czy jest jednoznacznie powiązany z kontrolką formularza (czy otacza pole formularza).'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NoId',
-					description: 'Form control does not have an ID, therefore it cannot have an explicit label.'
+					description: 'Kontrolka formularza nie ma atrybutu id, dlatego nie może mieć jawnej etykiety (powiązanej atrybutem for).'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H65.3',
-					description: 'Form control without a label contains an empty title attribute. The title attribute should identify the purpose of the control.'
+					description: 'Kontrolka formularza bez etykiety ma pusty atrybut title. Atrybut title powinien określać przeznaczenie kontrolki.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H65',
-					description: 'Check that the title attribute identifies the purpose of the control, and that a label element is not appropriate.'
+					description: 'Kontrolka formularza ma atrybut title bez treści lub z samymi spacjami. Taki title nie będzie uwzględniany jako prawidłowa etykieta.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.2',
-					description: 'Form control does not have an explicit label or title attribute, identifying the purpose of the control.'
+					description: 'Kontrolka formularza nie ma jawnego atrybutu label lub title, który określa przeznaczenie kontrolki.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NoLabelAllowed',
-					description: 'Label element should not be used for this type of form control.'
+					description: 'Element label nie powinien być stosowany w tego typu kontrolce formularza.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.1.After',
-					description: 'The label element for this control should be placed after this element.'
+					description: 'Element label dla tej kontrolki powinien być umieszczony za tą kontrolką.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.1.Before',
-					description: 'The label element for this control should be placed before this element.'
+					description: 'Element label dla tej kontrolki powinien być umieszczony przed tą kontrolką.'
 				},
 				{
+					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H49.Semantic',
+					description: 'Do oznaczenia tekstu wyróżnionego lub specjalnego powinien zostać użyty odpowiedni znacznik semantyczny, aby można je było określić programowo.'
+				},						
+				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H49.[NodeName]',
-					description: 'Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.'
+					description: 'Do oznaczenia tekstu wyróżnionego lub specjalnego powinien zostać użyty odpowiedni znacznik semantyczny, aby można je było określić programowo.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H49.AlignAttr',
-					description: 'Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.'
+					description: 'Do oznaczenia tekstu wyróżnionego lub specjalnego powinien zostać użyty odpowiedni znacznik. Atrybut align użyty w innych przypadkach niż w celu wyrównania danych w komórkach tabeli jest przestarzały. Użyj arkuszy stylów CSS.'
 				},
 				{
+					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.AlignAttr.Semantic',
+					description: 'Do oznaczenia tekstu wyróżnionego lub specjalnego powinien zostać użyty odpowiedni znacznik. Atrybut align użyty w innych przypadkach niż w celu wyrównania danych w komórkach tabeli jest przestarzały. Użyj arkuszy stylów CSS.'
+				},
+
+				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H42',
-					description: 'Heading markup should be used if this content is intended as a heading.'
+					description: 'Jeśli ten fragment treści miał być nagłówkiem, powinny zostać użyte znaczniki nagłówków (h1 – h6).'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H63.3',
-					description: 'Table cell has an invalid scope attribute. Valid values are row, col, rowgroup, or colgroup.'
+					description: 'W komórce tabeli użyto niewłaściwy atrybut scope. Dopuszczalne atrybuty to: row, col, rowgroup i colgroup.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H63.2',
-					description: 'Scope attributes on td elements that act as headers for other elements are obsolete in HTML5. Use a th element instead.'
+					description: 'Atrybuty scope używane dla komórek tabeli (td), aby oznaczyć nagłówek, są przestarzałe w HTML5. Zaleca się skorzystanie ze znacznika th.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H43.ScopeAmbiguous',
-					description: 'Scope attributes on th elements are ambiguous in a table with multiple levels of headings. Use the headers attribute on td elements instead.'
+					description: 'Użycie atrybutów scope dla elementu th jest niejasne w tabeli z wieloma nagłówkami. Zaleca się użycie atrybutu headers w znaczniku td.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H43.IncorrectAttr',
-					description: 'Incorrect headers attribute on this td element. Expected "[expected headers]" but found "[actual headers]"'
+					description: 'Nieprawidłowy atrybut nagłówka w elemencie td. Oczekiwany "[expected headers]", ale znaleziono "[actual headers]"'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H43.HeadersRequired',
-					description: 'The relationship between td elements and their associated th elements is not defined. As this table has multiple levels of th elements, you must use the headers attribute on td elements.'
+					description: 'Nie zdefiniowano relacji pomiędzy komórką td a powiązanym z nią nagłówkiem th. Wskazana tabela ma wiele poziomów th, więc należałoby użyć w komórkach td atrybutu headers.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H43.MissingHeaderIds',
-					description: 'Not all th elements in this table contain an id attribute. These cells should contain ids so that they may be referenced by td elements headers attributes.\''
+					description: 'Nie wszystkie nagłówki th w tej tabeli mają atrybut id i nie będzie się można do nich odwołać za pomocą atrybutu headers w znacznikach td.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H43.MissingHeadersAttrs',
-					description: 'Not all td elements in this table contain a headers attribute. Each headers attribute should list the ids of all th elements associated with that cell.'
+					description: 'Nie wszystkie komórki td w tej tabeli mają atrybut headers. W atrybucie headers powinny znajdować się identyfikatory powiązanych nagłówków.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H43,H63',
-					description: 'The relationship between td elements and their associated th elements is not defined. Use either the scope attribute on th elements, or the headers attribute on td elements.'
+					description: 'Komórki td nie mają ustalonej relacji z komórkami nagłówkowymi th. Należy zdefiniować atrybut scope dla th lub headers dla td.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H63.1',
-					description: 'Not all th elements in this table have a scope attribute. These cells should contain a scope attribute to identify their association with td elements.'
+					description: 'Nie wszystkie komórki th w tej tabeli mają atrybut scope. Ten atrybut pozwala powiązać nagłówki th z odpowiednimi komórkami td.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H39,H73.4',
-					description: 'If this table is a data table, and both a summary attribute and a caption element are present, the summary should not duplicate the caption.'
+					description: 'Jeśli tabela zawiera treści i zastosowano w niej atrybut summary oraz znacznik caption, to treści tego atrybutu i znacznika nie mogą być powielone.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H73.3.Check',
-					description: 'If this table is a data table, check that the summary attribute describes the tables organization or explains how to use the table.\''
+					description: 'Jeśli ta tabela zawiera dane, sprawdź, czy atrybut summary opisuje układ tabeli oraz wyjaśnia, jak jej użyć.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H73.3.NoSummary',
-					description: 'If this table is a data table, consider using the summary attribute of the table element to give an overview of this table.'
+					description: 'Jeśli ta tabela zawiera dane, rozważ użycie atrybutu aria-describedby albo starszego summary, aby opisać układ tabeli i wyjaśnić, jak jej użyć.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H39.3.Check',
-					description: 'If this table is a data table, check that the caption element accurately describes this table.'
+					description: 'Jeśli ta tabela zawiera dane, sprawdź, czy treść podpisu w caption odpowiednio je opisuje.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H39.3.NoCaption',
-					description: 'If this table is a data table, consider using a caption element to the table element to identify this table.'
+					description: 'Jeśli ta tabela zawiera dane, powinna być uzupełniona o podpis w znaczniku caption.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H71.3',
-					description: 'Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.'
+					description: 'Element fieldset nie ma opisu w postaci elementu legend. Wszystkim elementom fieldset powinny towarzyszyć opisy w elementach legend.'
 				},
+				{
+					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H71.NoLegend',
+					description: 'Element fieldset nie ma opisu w postaci elementu legend. Wszystkim elementom fieldset powinny towarzyszyć opisy w elementach legend.'
+				},					
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H85.2',
-					description: 'If this selection list contains groups of related options, they should be grouped with optgroup.'
+					description: 'Jeśli elmenty listy wyboru stanowią grupę, powinny być zgrupowane elementem optgroup.'
 				},
 				{
-					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H71.2',
-					description: 'Radio buttons or check boxes with the same name attribute must be contained within a fieldset element.'
+					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H71.2',
+					description: 'Pola opcji (radio) lub pola wyboru (checkobx) z tym samym atrybutem name muszą być umieszczone w elemencie fieldset.'
 				},
+				{
+					name: 'WCAG2A.Principle1.Guideline1_3.1_3_1.H71.SameName',
+					description: 'Pola opcji (radio) lub pola wyboru (checkobx) z tym samym atrybutem name muszą być umieszczone w elemencie fieldset.'
+				},	
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48.1',
-					description: 'Content appears to have the visual appearance of a bulleted list. It may be appropriate to mark this content up using a ul element.'
+					description: 'Treść przypomina z wyglądu listę nieuporządkowaną. Jeśli jest to lista nieuporządkowana, powinna być oznaczona odpowiednimi znacznikami ul.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48.2',
-					description: 'Content appears to have the visual appearance of a numbered list. It may be appropriate to mark this content up using an ol element.'
+					description: 'Treść przypomina z wyglądu listę uporządkowaną. Jeśli jest to lista uporządkowana, powinna być oznaczona odpowiednimi znacznikami ol.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.G141',
-					description: 'The heading structure is not logically nested. This [heading] element (should be a [correct heading] to be properly nested / appears to be the primary document heading, so should be an h1 element).'
+					description: 'Nagłówki nie są zagnieżdżone logicznie. Ten element [heading] (powinien być elementem [correct heading], aby był prawidłowo zagnieżdżony. (Wydaje się być głównym nagłówkiem dokumentu, więc powinien być elementem h1).'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48',
-					description: 'If this element contains a navigation section, it is recommended that it be marked up as a list.'
+					description: 'Jeśli ten element zawiera nawigację, zaleca się, aby został oznaczony jako lista np. przy użyciu listy nieuporządkowanej ul.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_2.G57',
-					description: 'Check that the content is ordered in a meaningful sequence when linearised, such as when style sheets are disabled.'
+					description: 'Struktura i ułożenie elementów powinny oddawać sens strony i informacji. Sprawdź, czy treść jest uporządkowana w sensownej kolejności po linearyzacji, na przykład po wyłączeniu arkuszy stylów.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_3.G96',
-					description: 'Where instructions are provided for understanding the content, do not rely on sensory characteristics alone (such as shape, size or location) to describe objects.'
+					description: 'Sprawdź, czy przekazane instrukcje opierają się także na innych właściwościach niż tylko na cechach postrzegalnych przez zmysły, takich jak kształt, wielkość czy położenie.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_4.RestrictView',
-					description: 'Check that content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential.'
+					description: 'Sprawdź, czy treść nie ogranicza widoku i działania do jednej orientacji wyświetlania, takiej jak pionowa lub pozioma, chyba że określona orientacja wyświetlania jest niezbędna'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_5_H98.FaultyValue',
-					description: 'This element contains a potentially faulty value in its autocomplete attribute.'
+					description: 'Ten element ma prawdopodobnie błędną wartość w swoim atrybucie autocomplete.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_5_H98.InvalidAutocomplete_Text',
-					description: 'Invalid autocomplete value. Element does not belong to Text control group.'
+					description: 'Niepoprawna wartość autocomplete. Element nie należy do grupy kontrolki Tekst.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_5_H98.InvalidAutocomplete_Multiline',
-					description: 'Invalid autocomplete value. Element does not belong to Multiline control group.'
+					description: 'Niepoprawna wartość autocomplete. Element nie należy do grupy kontrolki Wielowierszowe.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_5_H98.InvalidAutocomplete_Password',
-					description: 'Invalid autocomplete value. Element does not belong to Password control group.'
+					description: 'Niepoprawna wartość autocomplete. Element nie należy do grupy kontrolki Hasło.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_5_H98.InvalidAutocomplete_Url',
-					description: 'Invalid autocomplete value. Element does not belong to Url control group.'
+					description: 'Niepoprawna wartość autocomplete. Element nie należy do grupy kontrolki Url.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_5_H98.InvalidAutocomplete_Telephone',
-					description: 'Invalid autocomplete value. Element does not belong to Telephone control group.'
+					description: 'Niepoprawna wartość autocomplete. Element nie należy do grupy kontrolki Telefon.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_5_H98.InvalidAutocomplete_Numeric',
-					description: 'Invalid autocomplete value. Element does not belong to Numeric control group.'
+					description: 'Niepoprawna wartość autocomplete. Element nie należy do grupy kontrolki Liczba.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_5_H98.InvalidAutocomplete_Month',
-					description: 'Invalid autocomplete value. Element does not belong to Month control group.'
+					description: 'Niepoprawna wartość autocomplete. Element nie należy do grupy kontrolki Miesiąc.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_5_H98.InvalidAutocomplete_Date',
-					description: 'Invalid autocomplete value. Element does not belong to Date control group.'
+					description: 'Niepoprawna wartość autocomplete. Element nie należy do grupy kontrolki Data.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_5_H98.Purpose',
-					description: 'Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.'
+					description: 'Sprawdź, czy pole wprowadzania danych służy celowi określonemu w sekcji Przeznaczenie pól danych w komponentach interfejsu użytkowników (zobacz WCAG 2.1); oraz czy treeść jest zaimplementowana przy użyciu technologii z obsługą określania oczekiwanego znaczenia dla danych wejściowych formularza.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_5_H98.MissingAutocomplete',
-					description: 'This element does not have an autocomplete attribute. If this field collects information about the user, consider adding one to comply with this Success Criterion.'
+					description: 'Ten element nie ma atrybutu autocomplete. Jeśli to pole zbiera informacje o użytkowniku, rozważ jego dodanie, aby spełnić to kryterium sukcesu.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_3.1_3_6_ARIA11.Check',
-					description: 'Check that the purpose of User Interface Components, icons, and regions can be programmatically determined.'
+					description: 'Sprawdź, czy można programowo określić przeznaczenie komponentów interfejsu użytkownika, ikon i regionów.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_1.G14,G182',
-					description: 'Check that any information conveyed using colour alone is also available in text, or through other visual cues.'
+					description: 'Sprawdź, czy informacje przekazane za pomocą koloru są przedstawione także w inny alternatywny sposób, np. opisane tekstem.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_2.F23',
-					description: 'If any audio plays automatically for longer than 3 seconds, check that there is the ability to pause, stop or mute the audio.'
+					description: 'Jeżeli materiał audio włączany jest automatycznie i trwa dłużej niż trzy sekundy, należy umożliwić zatrzymanie bądź wyciszenie odtwarzania.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17',
-					description: 'This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of /{value/}. Recommendation: /{colour recommendations/}.'
+					description: 'Ten element ma niewystarczający kontrast na tym poziomie zgodności. Oczekiwano współczynnika kontrastu co najmniej 7:1, ale tekst w tym elemencie ma współczynnik kontrastu /{value/}. Zalecenie: /{colour recommendations/}.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18',
-					description: 'This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of /{value/}. Recommendation: /{colour recommendations/}.'
+					description: 'Ten element ma niewystarczający kontrast na tym poziomie zgodności. Oczekiwano współczynnika kontrastu co najmniej 4.5:1, ale tekst w tym elemencie ma współczynnik kontrastu /{value/}. Zalecenie: /{colour recommendations/}.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17-1',
-					description: 'This element\'s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.'
+					description: 'Tekst tego elementu jest umieszczony na obrazie tła. Sprawdź, czy współczynnik kontrastu między tekstem a wszystkimi zakrytymi częściami obrazu wynosi co najmniej 7:1.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18-1',
-					description: 'This element\'s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.'
+					description: 'Tekst tego elementu jest umieszczony na obrazie tła. Sprawdź, czy współczynnik kontrastu między tekstem a wszystkimi zakrytymi częściami obrazu wynosi co najmniej 4.5:1.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_7.G56',
-					description: 'For pre-recorded audio-only content that is primarily speech (such as narration), any background sounds should be muteable, or be at least 20 dB (or about 4 times) quieter than the speech.'
+					description: 'W przypadku nagranych wcześniej treści tylko-audio, które są głównie mową (np. narracja), wszelkie dźwięki w tle powinny być wyciszone lub być co najmniej o 20 dB (lub około 4 razy) cichsze niż mowa.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_8.G148,G156,G175',
-					description: 'Check that a mechanism is available for the user to select foreground and background colours for blocks of text, either through the Web page or the browser.'
+					description: 'Kolor tekstu oraz kolor tła powinny być możliwe do zmiany przez użytkownika na samej stronie lub poprzez funkcje przeglądarki.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_8.H87,C20',
-					description: 'Check that a mechanism exists to reduce the width of a block of text to no more than 80 characters (or 40 in Chinese, Japanese or Korean script).'
+					description: 'Szerokość bloku tekstowego nie powinna przekraczać 80 znaków (40 w przypadku alfabetów: chińskiego, japońskiego i koreańskiego).'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_8.C19,G172,G169',
-					description: 'Check that blocks of text are not fully justified - that is, to both left and right edges - or a mechanism exists to remove full justification.'
+					description: 'Tekst nie powinien być wyjustowany (tzn. wyrównany do prawego i lewego marginesu). Albo powinien istnieć mechanizm, który pozwala usunąć wyjustowanie.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_8.G188,C21',
-					description: 'Check that line spacing in blocks of text are at least 150% in paragraphs, and paragraph spacing is at least 1.5 times the line spacing, or that a mechanism is available to achieve this.'
+					description: 'Odstępy między wierszami w akapitach powinny wynosić przynajmniej 1,5 wysokości linii, a odległość między akapitami powinna być przynajmniej 1,5 razy większa niż ta pomiędzy wierszami.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_8.H87,G146,C26',
-					description: 'Check that text can be resized without assistive technology up to 200 percent without requiring the user to scroll horizontally on a full-screen window.'
+					description: 'Tekst na stronie powinien mieć możliwość powiększenia do 200% bez użycia technologii wspomagających. Nie powinno być też wymagane przewijanie dolnym paskiem ekranu przy takim ustawieniu i zmaksymalizowanym oknie przeglądarki.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_9.G140,C22,C30.NoException',
-					description: 'Check that images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed.'
+					description: 'Sprawdź, czy teksty w formie grafiki pełnią wyłącznie funkcję dekoracyjną lub „graficzna” prezentacja tekstu ma znaczenie z uwagi na treść przekazywanej informacji.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_10_C32,C31,C33,C38,SCR34,G206.Check',
-					description: 'Check that content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for: \nVertical scrolling content at a width equivalent to 320 CSS pixels;\\n Horizontal scrolling content at a height equivalent to 256 CSS pixels; \nExcept for parts of the content which require two-dimensional layout for usage or meaning.'
+					description: 'Sprawdź, czy treść może być prezentowana bez utraty informacji lub funkcjonalności oraz bez konieczności przewijania w dwóch wymiarach dla: \nTreści przewijanej pionowo przy szerokości równoważnej 320 pikselom CSS; \nTreści przewijanej poziomo przy wysokości równoważnej 256 pikselom CSS; \nZ wyjątkiem części treści, które wymagają układu dwuwymiarowego ze względu na sposób korzystania lub znaczenie.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_10_C32,C31,C33,C38,SCR34,G206.Fixed',
-					description: 'Principle1.Guideline1_4.1_4_10_C32,C31,C33,C38,SCR34,G206.Scrolling'
+					description: 'Ten element ma "position: fixed". Może to wymagać przewijania w dwóch wymiarach, co jest uznawane za niespełninie tego kryterium sukcesu.'
 				},
 				{
+					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_10_C32,C31,C33,C38,SCR34,G206.Scrolling',
+					description: 'Tekst wstępnie sformatowany może wymagać przewijania w dwóch wymiarach, co jest uznawane za niespełninie tego kryterium sukcesu.'
+				},				
+				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_10_C32,C31,C33,C38,SCR34,G206.Zoom',
-					description: 'Interfering with a user agents ability to zoom may be a failure of this Success Criterion.'
+					description: 'Zakłócanie możliwości powiększania przez program użytkownika może być niespełniniem tego kryterium sukcesu.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_11_G195,G207,G18,G145,G174,F78.Check',
-					description: 'Check that the visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s): \nUser Interface Components: Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author; \nGraphical Objects: Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.'
+					description: 'Sprawdź, czy wizualna prezentacja poniższych elementów ma współczynnik kontrastu co najmniej 3:1 w stosunku do sąsiadującego koloru(ów): \nKomponenty interfejsu użytkownika: Informacje wizualne wymagane do identyfikacji komponentów i stanów interfejsu użytkownika, z wyjątkiem komponentów nieaktywnych lub gdy wygląd komponentu jest określany przez program użytkownika i nie jest modyfikowany przez autora; \nObiekty graficzne: Części grafiki wymagane do zrozumienia treści, z wyjątkiem sytuacji, gdy szczególna prezentacja grafiki jest niezbędna do przekazania informacji.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_12_C36,C35.Check',
-					description: 'Check that no loss of content or functionality occurs by setting all of the following and by changing no other style property: \nLine height(line spacing) to at least 1.5 times the font size; \nSpacing following paragraphs to at least 2 times the font size; \nLetter spacing(tracking) to at least 0.12 times the font size; \nWord spacing to at least 0.16 times the font size'
+					description: 'Sprawdź, czy nie nastąpi utrata treści lub funkcjonalności, ustawiając wszystkie poniższe elementy i nie zmieniając żadnej innej właściwości stylu: \nWysokość wiersza (odstęp między wierszami) co najmniej 1,5-krotność rozmiaru czcionki; \nOdstępy między akapitami - co najmniej 2-krotność rozmiaru czcionki; \nOdstępy między literami (tracking) - co najmniej 0,12-krotność rozmiaru czcionki; \nOdstępy między wyrazami - co najmniej 0,16 rozmiaru czcionki.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline1_4.1_4_13_F95.Check',
-					description: 'Check that where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true: \nDismissable: A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an input error or does not obscure or replace other content; \nHoverable: If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing; \nPersistent: The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid.'
+					description: 'Sprawdź, czy w przypadku, gdy otrzymanie, a następnie usunięcie najechania wskaźnikiem lub fokusu klawiatury powoduje, że dodatkowa treść staje się widoczna, a następnie ukryta, następujące stwierdzenia są prawdziwe: \nOdrzucone: Istnieje mechanizm umożliwiający odrzucenie dodatkowej treści bez przesuwania wskaźnika myszy lub fokusu klawiatury, chyba że dodatkowa treść przekazuje błąd wprowadzanych danych lub nie przesłania ani nie zastępuje innej treści; \nWskazywane: Jeśli wskaźnik myszy (hover) może wyzwolić dodatkową treść, wówczas wskaźnik może zostać przeniesiony na dodatkową treść bez znikania dodatkowej treści; \nTrwałe: Dodatkowa treść pozostaje widoczna do momentu usunięcia wyzwalacza aktywacji lub fokusu, użytkownik odrzuca go lub jego informacje nie są już ważne.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline2_1.2_1_4.Check',
-					description: 'Check that if a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true: \nTurn off: A mechanism is available to turn the shortcut off; \nRemap: A mechanism is available to remap the shortcut to use one or more non- printable keyboard characters(e.g.Ctrl, Alt, etc); \nActive only on focus: The keyboard shortcut for a user interface component is only active when that component has focus.'
+					description: 'Sprawdź, czy jeśli skrót klawiaturowy jest zaimplementowany w treści przy użyciu tylko znaków literowych (w tym wielkich i małych liter), znaków interpunkcyjnych, cyfr lub symboli, to prawdziwa jest co najmniej jedna z tych sytuacji: \nWyłączanie: Istnieje mechanizm wyłączania skrótu;\nMapowanie: Istnieje mechanizm zmiany mapowania skrótu w celu użycia jednego lub więcej niedrukowalnych znaków klawiatury (np. Ctrl, Alt, itp.);\nAktywny tylko, gdy ma fokus: Skrót klawiaturowy dla komponentu interfejsu użytkownika jest aktywny tylko wtedy, gdy ten komponent ma fokus.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_1.2_1_1.SCR20.DblClick',
-					description: 'Ensure the functionality provided by double-clicking on this element is available through the keyboard.'
+					description: 'Funkcjonalność zapewniona przez dwukrotne kliknięce przyciskiem myszy, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_1.2_1_1.SCR20.MouseOver',
-					description: 'Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.'
+					description: 'Funkcjonalność zapewniona przez najechanie kursorem myszy na element, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_1.2_1_1.SCR20.MouseOut',
-					description: 'Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.'
+					description: 'Funkcjonalność zapewniona przez opuszczenie elementu kursorem myszy, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_1.2_1_1.SCR20.MouseMove',
-					description: 'Ensure the functionality provided by moving the mouse on this element is available through the keyboard.'
+					description: 'Funkcjonalność zapewniona z wykorzystaniem ruchów myszą, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_1.2_1_1.SCR20.MouseDown',
-					description: 'Ensure the functionality provided by mousing down on this element is available through the keyboard; for instance, using the keydown event.'
+					description: 'Funkcjonalność zapewniona przez wciśnięciu przycisku myszy, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_1.2_1_1.SCR20.MouseUp',
-					description: 'Ensure the functionality provided by mousing up on this element is available through the keyboard; for instance, using the keyup event.'
+					description: 'Funkcjonalność zapewniona przez zwolnieniu przycisku myszy, powinna być dostępna również przez klawiaturę.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_1.2_1_2.F10',
-					description: 'Check that this applet or plugin provides the ability to move the focus away from itself when using the keyboard.'
+					description: 'Sprawdź, czy dodatek lub applet pozwalają na uwolnienie fokusu, jeśli przejdzie on do tych funkcjonalności.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_2.2_2_1.F40.2',
-					description: 'Meta refresh tag used to redirect to another page, with a time limit that is not zero. Users cannot control this time limit.'
+					description: 'Znacznik meta z atrybutem redirect przekierowuje na inną stronę w czesie określonym jako 0. Użytkownicy nie mają kontroli w takim krótkim czasie.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_2.2_2_1.F41.2',
-					description: 'Meta refresh tag used to refresh the current page. Users cannot control the time limit for this refresh.'
+					description: 'Znacznik meta z atrybutem refresh odświeża aktualną stronę. Użytkownicy nie mają kontroli nad tym odświeżaniem.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_2.2_2_2.SCR33,SCR22,G187,G152,G186,G191',
-					description: 'If any part of the content moves, scrolls or blinks for more than 5 seconds, or auto-updates, check that there is a mechanism available to pause, stop, or hide the content.'
+					description: 'Jeśli na stronie znajduje się element, który porusza się, przewija lub mruga dłużej niż 5 sekund lub jest automatycznie aktualizowany, musi istnieć mechanizm, który umożliwia zatrzymanie tego efektu lub ukrycie treści.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_2.2_2_2.F4',
-					description: 'Ensure there is a mechanism available to stop this blinking element in less than five seconds.'
+					description: 'Jeśli ten element miga dłużej niż 5 sekund, sprawdź, czy istnieje mechanizm, który umożliwi zatrzymanie migania lub ukrycie elementu.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_2.2_2_2.F47',
-					description: 'Blink elements cannot satisfy the requirement that blinking information can be stopped within five seconds.'
+					description: 'Elementu blink nie spełnia wymagania, zgodnie z którym miganie można zatrzymać lub ukryć, gdy trwa dłużej niż 5 sekund.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_2.2_2_3.G5',
@@ -1551,11 +1608,11 @@ function getStandards() {
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_2.2_2_5.G105,G181',
-					description: 'If this Web page is part of a set of Web pages with an inactivity time limit, check that an authenticated user can continue the activity without loss of data after re-authenticating.'
+					description: 'Jeśli ta strona internetowa jest częścią zestawu stron internetowych z limitem czasu nieaktywności, sprawdź, czy uwierzytelniony użytkownik może kontynuować aktywność bez utraty danych po ponownym uwierzytelnieniu.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline2_2.2_2_6.Check',
-					description: 'Check that users are warned of the duration of any user inactivity that could cause data loss, unless the data is preserved for more than 20 hours when the user does not take any actions.'
+					description: 'Sprawdź, czy użytkownicy są ostrzegani o czasie trwania każdej bezczynności użytkownika, która może spowodować utratę danych, chyba że dane są przechowywane przez ponad 20 godzin, gdy użytkownik nie podejmuje żadnych działań.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_3.2_3_2.G19',
@@ -1563,239 +1620,239 @@ function getStandards() {
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline2_3.2_3_3.Check',
-					description: 'Check that motion animation triggered by interaction can be disabled, unless the animation is essential to the functionality or the information being conveyed.'
+					description: 'Sprawdź, czy animacja ruchu wywołana przez interakcję może być wyłączona, chyba że jest ona niezbędna dla funkcjonalności lub przekazywanej informacji.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline2_5.2_5_1.Check',
-					description: 'Check that all functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential.'
+					description: 'Sprawdź, czy wszystkie funkcje wykorzystujące do obsługi gesty wielopunktowe lub oparte na ścieżce można obsługiwać za pomocą pojedynczego wskazania bez gestu opartego na ścieżce, chyba że gest wielopunktowy lub oparty na ścieżce jest niezbędny.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline2_5.2_5_2.SinglePointer_Check',
-					description: 'Check that for functionality that can be operated using a single pointer, at least one of the following is true: \nNo Down- Event: The down - event of the pointer is not used to execute any part of the function; \nAbort or Undo: Completion of the function is on the up - event, and a mechanism is available to abort the function before completion or to undo the function after completion; \nUp Reversal: The up - event reverses any outcome of the preceding down - event; \nEssential: Completing the function on the down - event is essential.'
+					description: 'Sprawdź, czy dla funkcjonalności, które mogą być obsługiwane za pomocą pomocą pojedynczego wskazania, przynajmniej jedno z poniższych jest prawdziwe: \nBrak zdarzenia: Dotyk wskaźnikiem lub naciskanie nie wywołuje jakiejkolwiek części zdarzenia; \nPrzerwanie lub cofnięcie: Zdarzenie jest zależne od zwolnienia dotyku lub nacisku i istnieje mechanizm, którym można je przerwać lub cofnąć po zwolnieniu dotyku lub nacisku; \nOdwrócenie zdarzenia: Zwolnienie dotyku lub nacisku cofa wywołane zdarzenie i przywraca stan sprzed zdarzenia; \nIstotne: Dotyk wskaźnikiem lub naciskanie jest niezbędne do wywołania zdarzenia.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline2_5.2_5_2.Mousedown_Check',
-					description: 'This element has an mousedown event listener. Check that for functionality that can be operated using a single pointer, at least one of the following is true: \nNo Down- Event: The down - event of the pointer is not used to execute any part of the function; \nAbort or Undo: Completion of the function is on the up - event, and a mechanism is available to abort the function before completion or to undo the function after completion; \nUp Reversal: The up - event reverses any outcome of the preceding down - event; \nEssential: Completing the function on the down - event is essential.'
+					description: 'Ten element nasłuchuje zdarzeń mousedown (naciśniecie wskaźnika myszy). Sprawdź, czy dla funkcjonalności, które mogą być obsługiwane za pomocą pojedynczego wskazania, przynajmniej jedno z poniższych jest prawdziwe: \nBrak zdarzenia: Dotyk wskaźnikiem lub naciskanie nie wywołuje jakiejkolwiek części zdarzenia; \nPrzerwanie lub cofnięcie: Zdarzenie jest zależne od zwolnienia dotyku lub nacisku i istnieje mechanizm, którym można je przerwać lub cofnąć po zwolnieniu dotyku lub nacisku; \nOdwrócenie zdarzenia: Zwolnienie dotyku lub nacisku cofa wywołane zdarzenie i przywraca stan sprzed zdarzenia; \nIstotne: Dotyk wskaźnikiem lub naciskanie jest niezbędne do wywołania zdarzenia.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline2_5.2_5_2.Touchstart_Check',
-					description: 'This element has a touchstart event listener. Check that for functionality that can be operated using a single pointer, at least one of the following is true: \nNo Down- Event: The down - event of the pointer is not used to execute any part of the function; \nAbort or Undo: Completion of the function is on the up - event, and a mechanism is available to abort the function before completion or to undo the function after completion; \nUp Reversal: The up - event reverses any outcome of the preceding down - event; \nEssential: Completing the function on the down - event is essential.'
+					description: 'Ten element nasłuchuje zdarzeń touchstart. Sprawdź, czy dla funkcjonalności, które mogą być obsługiwane za pomocą pojedynczego wskazania, przynajmniej jedno z poniższych jest prawdziwe: \nBrak zdarzenia: Dotyk wskaźnikiem lub naciskanie nie wywołuje jakiejkolwiek części zdarzenia; \nPrzerwanie lub cofnięcie: Zdarzenie jest zależne od zwolnienia dotyku lub nacisku i istnieje mechanizm, którym można je przerwać lub cofnąć po zwolnieniu dotyku lub nacisku; \nOdwrócenie zdarzenia: Zwolnienie dotyku lub nacisku cofa wywołane zdarzenie i przywraca stan sprzed zdarzenia; \nIstotne: Dotyk wskaźnikiem lub naciskanie jest niezbędne do wywołania zdarzenia.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline2_5.2_5_3_F96.Check',
-					description: 'Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.'
+					description: 'Sprawdź, czy dla komponentów interfejsu użytkownika z etykietami, które zawierają tekst lub obrazy tekstu, nazwa zawiera tekst, który jest prezentowany na ekranie.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline2_5.2_5_3_F96.AccessibleName',
-					description: 'Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.'
+					description: 'Dostępna nazwa tego elementu nie zawiera widocznego tekstu etykiety. Sprawdź, czy dla komponentów interfejsu użytkownika z etykietami, które zawierają tekst lub obrazy tekstu, nazwa zawiera tekst, który jest prezentowany na ekranie.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline2_5.2_5_4.Check',
-					description: 'Check that functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when: \nSupported Interface: The motion is used to operate functionality through an accessibility supported interface; \nEssential: The motion is essential for the function and doing so would invalidate the activity.'
+					description: 'Sprawdź, czy funkcjonalności, które mogą być obsługiwane przez ruch urządzenia lub ruch użytkownika, mogą być również obsługiwane przez elementy interfejsu użytkownika, a reagowanie na ruch może być wyłączone, aby zapobiec przypadkowemu uruchomieniu, z wyjątkiem sytuacji, gdy: \nObsługiwany interfejs: Ruch służy do obsługi funkcjonalności poprzez interfejs obsługiwany przez dostępność; \nIstotny: Ruch jest niezbędny dla funkcjonalności, a jego brak skutkowałoby anulowaniem działania.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline2_5.2_5_4.Devicemotion',
-					description: 'WCAG2AA.This element has a devicemotion event listener. Check that functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when: \nSupported Interface: The motion is used to operate functionality through an accessibility supported interface; \nEssential: The motion is essential for the function and doing so would invalidate the activity.'
+					description: 'Ten element ma nasłuchiwanie zdarzeń devicemotion (ruch urządzenia). Sprawdź, czy funkcjonalności, które mogą być obsługiwane przez ruch urządzenia lub ruch użytkownika, mogą być również obsługiwane przez elementy interfejsu użytkownika, a reagowanie na ruch może być wyłączone, aby zapobiec przypadkowemu uruchomieniu, z wyjątkiem sytuacji, gdy: \nObsługiwany interfejs: Ruch służy do obsługi funkcjonalności poprzez interfejs obsługiwany przez dostępność; \nIstotny: Ruch jest niezbędny dla funkcjonalności, a jego brak skutkowałoby anulowaniem działania.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline2_5.2_5_5.Check',
-					description: 'Check that the size of the target for pointer inputs is at least 44 by 44 CSS pixels except when:\nEquivalent: The target is available through an equivalent link or control on the same page that is at least 44 by 44 CSS pixels;\nInline: The target is in a sentence or block of text;\nUser Agent Control: The size of the target is determined by the user agent and is not modified by the author;\nEssential: A particular presentation of the target is essential to the information being conveyed.'
+					description: 'Sprawdź, czy rozmiar celu punktu dotykowego wynosi co najmniej 44 na 44 piksele CSS, z wyjątkiem sytuacji, gdy:\nOdpowiednik: Cel jest dostępny za pośrednictwem równoważnego łącza lub kontrolki na tej samej stronie, która ma co najmniej 44 na 44 piksele CSS;\nŚródliniowe: Cel znajduje się w zdaniu lub w bloku tekstu;\nKontrola programu użytkownika: Rozmiar obiektu docelowego jest określony przez program użytkownika (przeglądarkę) i nie jest modyfikowany przez autora;\nIstotny: Szczególna prezentacja celu ma istotne znaczenie dla przekazywanych informacji.'
 				},
 				{
 					name: 'WCAG2AAA.Principle1.Guideline2_5.2_5_6.Check',
-					description: 'Check that the content does not restrict use of input modalities available on a platform except where the restriction is essential, required to ensure the security of the content, or required to respect user settings.'
+					description: 'Sprawdź, czy treść nie ogranicza korzystania z metod wprowadzania danych dostępnych na platformie, z wyjątkiem sytuacji, gdy ograniczenie jest niezbędne, wymagane do zapewnienia bezpieczeństwa treści lub wymagane do przestrzegania ustawień użytkownika.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_4.2_4_1.H64.1',
-					description: 'Iframe element requires a non-empty title attribute that identifies the frame.'
+					description: 'Element iframe musi mieć tytuł. Wypełnij atrybut title i umieść w nim opis ramki.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_4.2_4_1.H64.2',
-					description: 'Check that the title attribute of this element contains text that identifies the frame.'
+					description: 'Sprawdź, czy atrybut title elementu iframe ma tekst, który dokładnie określa treść ramki.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_4.2_4_1.G1,G123,G124,H69',
-					description: 'Ensure that any common navigation elements can be bypassed; for instance, by use of skip links, header elements, or ARIA landmark roles.'
+					description: 'Sprawdź, czy użytkownik może pominąć powtarzającą się nawigację. Można to zapewnić przez użycie łączy pomijających, nagłówków lub punktów orientacyjnych.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchId',
-					description: 'This link points to a named anchor "[link target]" within the document, but no anchor exists with that name.'
+					description: 'Ten link wskazuje identyfikator "[link target]", ale takiego identyfikatora w dokumencie nie ma.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchIdFragment2.4.2',
-					description: 'This link points to a named anchor "[link target]" within the document, but no anchor exists with that name in the fragment tested.'
+					description: 'Ten link wskazuje identyfikator "[link target]" w dokumencie, ale takiego identyfikatora w testowanym obszarze nie ma.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_4.2_4_2.H25.1.NoTitleEl',
-					description: 'A title should be provided for the document, using a non-empty title element in the head section.'
+					description: 'Strona nie ma tytułu. Należy dodać do sekcji nagłówkowej strony element title lub wypełnić jego treść.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_4.2_4_2.H25.1.EmptyTitle',
-					description: 'The title element in the head section should be non-empty.'
+					description: 'Element title w sekcji nagłówkowej strony nie może być pusty. Musi mieć treść.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_4.2_4_2.H25.2',
-					description: 'Check that the title element describes the document.'
+					description: 'Sprawdź, czy tekst w elemencie title w sekcji nagłówkowej strony dokładnie opisuje treść strony.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_4.2_4_3.H4.2',
-					description: 'If tabindex is used, check that the tab order specified by the tabindex attributes follows relationships in the content.'
+					description: 'Jeśli został użyte dodatnie wartości atrybutu tabindex, sprawdź, czy podczas nawigacji sekwencyjnej tabulatorem relacje i następstwo treści są zrozumiałe dla użytkownika.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_4.2_4_5.G125,G64,G63,G161,G126,G185',
-					description: 'If this Web page is not part of a linear process, check that there is more than one way of locating this Web page within a set of Web pages.'
+					description: 'Jeśli strona nie jest częścią procesu krokowego, sprawdź, czy jest więcej niż jeden sposób na dotarcie do tej strony.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_4.2_4_6.G130,G131',
-					description: 'Check that headings and labels describe topic or purpose.'
+					description: 'Sprawdź, czy nagłówki i etykiety  opisują temat lub cel treści.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_4.2_4_7.G149,G165,G195,C15,SCR31',
-					description: 'Check that there is at least one mode of operation where the keyboard focus indicator can be visually located on user interface controls.'
+					description: 'Sprawdź, czy każdy element możliwy do nawigacji za pomocą klawiatury, ma widoczny wskaźnik fokusu klawiatury.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_4.2_4_8.H59.1',
-					description: 'Link elements can only be located in the head section of the document.'
+					description: 'Znacznik link może być umieszczony wyłącznie w sekcji head.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_4.2_4_8.H59.2a',
-					description: 'Link element is missing a non-empty rel attribute identifying the link type.'
+					description: 'Znacznik link nie ma atrybutu rel, którego wartość wskazuje na typ i powiązanie linku.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_4.2_4_8.H59.2b',
-					description: 'Link element is missing a non-empty href attribute pointing to the resource being linked.'
+					description: 'Znacznik link nie ma adresu w atrybucie href — nie prowadzi do żadnego zasobu.'
 				},
 				{
 					name: 'WCAG2AAA.Principle2.Guideline2_4.2_4_9.H30',
-					description: 'Check that text of the link describes the purpose of the link.'
+					description: 'Sprawdź, czy treść linku zrozumiale opisuje jego funkcję.'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_1.3_1_1.H57.2',
-					description: 'The html element should have a lang or xml:lang attribute which describes the language of the document.'
+					description: 'Znacznik html musi mieć atrybut lang, który określa język strony.'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_1.3_1_1.H57.3.Lang',
-					description: 'The language specified in the lang attribute of the document element does not appear to be well-formed.'
+					description: 'Język określony w atrybucie lang nie wydaje się poprawnie sformatowany. Sprawdź w https://datatracker.ietf.org/doc/html/rfc5646'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_1.3_1_1.H57.3.XmlLang',
-					description: 'The language specified in the xml:lang attribute of the document element does not appear to be well-formed.'
+					description: 'Język określony w atrybucie "xml:lang" nie wydaje się poprawnie sformatowany. Sprawdź w https://datatracker.ietf.org/doc/html/rfc5646'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_1.3_1_2.H58',
-					description: 'Ensure that any change in language is marked using the lang and/or xml:lang attribute on an element, as appropriate.'
+					description: 'Każda zmiana języka w treściach strony powinna być oznaczona atrybutem lang lub xml:lang.'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_1.3_1_2.H58.1.Lang',
-					description: 'The language specified in the lang attribute of this element does not appear to be well-formed.'
+					description: 'Język określony w atrybucie lang tego elementu nie wydaje się poprawnie sformatowany. Sprawdź w https://datatracker.ietf.org/doc/html/rfc5646'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_1.3_1_2.H58.1.XmlLang',
-					description: 'The language specified in the xml:lang attribute of this element does not appear to be well-formed.'
+					description: 'Język określony w atrybucie xml:lang tego elementu nie wydaje się poprawnie sformatowany. Sprawdź w https://datatracker.ietf.org/doc/html/rfc5646'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_1.3_1_3.H40,H54,H60,G62,G70',
-					description: 'Check that there is a mechanism available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.'
+					description: 'Sprawdź, czy jest zapewniony mechanizm, za pomocą którego można sprawdzić definicje słów użytych w nietypowy sposób, co odnosi się też do idiomów i żargonu.'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_1.3_1_4.G102,G55,G62,H28,G97',
-					description: 'Check that a mechanism for identifying the expanded form or meaning of abbreviations is available.'
+					description: 'Sprawdź, czy jest zapewniony mechanizm, za pomocą którego można sprawdzić znaczenie skrótów w ich rozwiniętej formie.'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_1.3_1_5.G86,G103,G79,G153,G160',
-					description: 'Where the content requires reading ability more advanced than the lower secondary education level, supplemental content or an alternative version should be provided.'
+					description: 'Jeśli dany tekst wymaga umiejętności czytania na poziomie wyższym niż poziom gimnazjalny, powinna być dostępna jego dodatkowa, uproszczona wersja.'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_1.3_1_6.H62.1.HTML5',
-					description: 'Ruby element does not contain an rt element containing pronunciation information for its body text.'
+					description: 'Element ruby nie zawiera znacznika rt, który opisuje sposób wymowy.'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_1.3_1_6.H62.1.XHTML11',
-					description: 'Ruby element does not contain an rt element containing pronunciation information for the text inside the rb element.'
+					description: 'Element ruby nie zawiera znacznika rt, który opisuje sposób wymowy treści umieszczonej wewnątrz znacznika rb.'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_1.3_1_6.H62.2',
-					description: 'Ruby element does not contain rp elements, which provide extra punctuation to browsers not supporting ruby text.'
+					description: 'Element ruby nie zawiera znacznika rp, który zapewnia wsparcie dla przeglądarek niewspierających treści w znacznikach ruby.'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107',
-					description: 'Check that a change of context does not occur when any input field receives focus.'
+					description: 'Sprawdź, czy po przenieseniu fokusu na dany element formularza nie następuje zaskakująca dla użytkownika zmiana kontekstu (np. przeniesienie na inną stronę).'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_2.3_2_2.H32.2',
-					description: 'Form does not contain a submit button (input type="submit", input type="image", or button type="submit").'
+					description: 'Formularz nie ma przycisku przesyłania (input type="submit", input type="image" albo button type="submit").'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_2.3_2_3.G61',
-					description: 'Check that navigational mechanisms that are repeated on multiple Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.'
+					description: 'Sprawdź, czy powtarzające się na stronach elementy nawigacyjne są umieszczone w tej samej kolejności. Dopuszczalna jest zmiana kolejności przez samego użytkownika.'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_2.3_2_4.G197',
-					description: 'Check that components that have the same functionality within this Web page are identified consistently in the set of Web pages to which it belongs.'
+					description: 'Elementy, które mają tę samą funkcjonalność, muszą być oznaczone w ten sam sposób na wszystkich stronach internetowych.'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_2.3_2_5.H83.3',
-					description: 'Check that this link\'s link text contains information indicating that the link will open in a new window.'
+					description: 'Sprawdź, czy linki otwierające się w nowym oknie lub karcie przeglądarki mają o tym informację w swojej treści.'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_3.3_3_1.G83,G84,G85',
-					description: 'If an input error is automatically detected in this form, check that the item(s) in error are identified and the error(s) are described to the user in text.'
+					description: 'Jeśli przy wpisywaniu informacji, błąd zostanie wykryty automatycznie, system powinien wskazać błędny element, a użytkownik otrzymać opis błędu w postaci tekstu.'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_3.3_3_2.G131,G89,G184,H90',
-					description: 'Check that descriptive labels or instructions (including for required fields) are provided for user input in this form.'
+					description: 'Sprawdź, czy etykiety lub instrukcje kontrolek przeznaczonych na wprowadzenie danych przez użytkownika (w tym wymaganych) mają zrozumiałe objaśnienia i wskazówki. '
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_3.3_3_3.G177',
-					description: 'Check that this form provides suggested corrections to errors in user input, unless it would jeopardize the security or purpose of the content.'
+					description: 'Jeśli przy wpisywaniu informacji automatycznie zostanie wykryty błąd, użytkownik powinien otrzymać sugestię korekty, chyba że wpłynie to negatywnie na bezpieczeństwo systemu.'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_3.3_3_5.G71,G184,G193',
-					description: 'Check that context-sensitive help is available for this form, at a Web-page and/or control level.'
+					description: 'Sprawdź, czy w formularzu istnieje pomoc kontekstowa na samej stronie lub na stronie służącej do potwierdzenia wprowadzonych treści.'
 				},
 				{
 					name: 'WCAG2AAA.Principle3.Guideline3_3.3_3_6.G98,G99,G155,G164,G168.AllForms',
-					description: 'Check that submissions to this form are either reversible, checked for input errors, and/or confirmed by the user.'
+					description: 'Sprawdź, czy użytkownik może sprawdzić i zmienić informacje wprowadzone w formularzu, zanim ostatecznie potwierdzi jego wysłanie.'
 				},
 				{
 					name: 'WCAG2AAA.Principle4.Guideline4_1.4_1_1.F77',
-					description: 'Duplicate id attribute value "[Element ID]" found on the web page.'
+					description: 'Znaleziono powtórzoną wartość atrybutu "[Element ID]". Dopuszczalne jest jedno wystąpienie wartości identyfikatora.'
 				},
 				{
 					name: 'WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Empty',
-					description: 'Anchor element found with an ID but without a href or link text. Consider moving its ID to a parent or nearby element.'
+					description: 'Link ma atrybut id, nie ma jednak ani adresu w atrybucie href ani treści. Rozważ przeniesienie identyfikatora do elementu nadrzędnego.'
 				},
 				{
 					name: 'WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyWithName',
-					description: 'Anchor element found with a name attribute but without a href or link text. Consider moving the name attribute to become an ID of a parent or nearby element.'
+					description: 'Link ma atrybut name, ale nie ma ani adresu, ani treści. Rozważ przeniesienie wartości atrybutu name do identyfikatora elementu nadrzędnego jako id.'
 				},
 				{
 					name: 'WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId',
-					description: 'Anchor element found with no link content and no name and/or ID attribute.'
+					description: 'Link nie ma treści, ani nazwy, ani identyfikatora.'
 				},
 				{
 					name: 'WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.NoHref',
-					description: 'Anchor elements should not be used for defining in-page link targets. If not using the ID for other purposes (such as CSS or scripting), consider moving it to a parent element.'
+					description: 'Link nie powinien być używany do tworzenia wewnętrznych odniesień na stronie. Jeśli identyfikator jest używany do stylów CSS lub oskryptowania JS, rozważ przeniesienie identyfikatora od elementu nadrzędnego (rodzica).'
 				},
 				{
 					name: 'WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder',
-					description: 'Anchor element found with link content, but no href and/or ID attribute has been supplied.'
+					description: 'Link ma jedynie treść. Brakuje adresu w atrybucie href, identyfikatora lub nazwy (atrybutu name).'
 				},
 				{
 					name: 'WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent',
-					description: 'Anchor element found with a valid href attribute, but no link content has been supplied.'
+					description: 'Link ma prawidłowy adres w atrybucie href, ale nie ma treści linku.'
 				},
 				{
-					name: 'WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.[NodeName].Name',
-					description: 'This [element type] does not have a name available to an accessibility API. Valid names are [valid names for this element].'
+					name: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.[NodeName].Name',
+					description: 'Ten /[element type/] nie ma nazwy dostępnej dla API dostępności. Prawidłowe nazwy to /[valid names for this element/].'
 				},
 				{
-					name: 'WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.[NodeName].Value',
-					description: 'This [element type] does not have a value available to an accessibility API. Add one [using a element-specific method].'
-				},
+					name: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.[NodeName].Value',
+					description: 'Ten /[element type/] nie ma wartości dostępnej dla API dostępności. Dodaj ją /[using a element-specific method/].'
+				},	
 				{
 					name: 'WCAG2AAA.Principle1.Guideline4_1.4_1_3_ARIA22,G199,ARIA19,G83,G84,G85,G139,G177,G194,ARIA23.Check',
-					description: 'Check that status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus.'
+					description: 'Sprawdź, czy komunikaty o stanie mogą być programowo określane poprzez rolę lub właściwości, tak aby mogły być prezentowane użytkownikowi przez technologie wspomagające bez otrzymywania fokusu.'
 				}
 			]
 		}

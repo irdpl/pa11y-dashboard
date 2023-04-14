@@ -1,6 +1,6 @@
-# Pa11y Dashboard
+# Pa11y Dashboard, czyli Pulpit Pa11y
 
-Pa11y Dashboard is a web interface to the [Pa11y][pa11y] accessibility reporter; allowing you to focus on *fixing* issues rather than hunting them down.
+Pa11y Dashboard to interfejs sieciowy do narzędzia do raportowania dostępności [Pa11y][pa11y]; co pozwala _skupić_ się na naprawianiu problemów, a nie na ich szukaniu.
 
 ![Version][shield-version]
 [![Node.js version support][shield-node]][info-node]
@@ -12,60 +12,61 @@ Pa11y Dashboard is a web interface to the [Pa11y][pa11y] accessibility reporter;
 
 ---
 
-## Requirements
+## Wymagania
 
-Pa11y Dashboard is a [Node.js][node] application and requires a stable or LTS version of Node, currently version 12 or 14.
+Pulpit Pa11y to aplikacja [Node.js][node], która wymaga stabilnej lub LTS wersji Node, obecnie w wersji 12 lub 14.
 
-⚠️ At the moment, Pa11y Dashboard won't work with Node.js v16. Please use Node.js 12 or 14. ⚠️
+⚠️ W chwili obecnej Pa11y Dashboard nie działa z Node.js v16. Użyj Node.js 12 lub 14. ⚠️
 
-Pa11y Dashboard uses a [MongoDB][mongo] database to store the results of the tests. The database doesn't have to be in the same server or computer where Pa11y Dashboard is running from.
+Pulpit Pa11y wykorzystuje bazę danych [MongoDB][mongo] do przechowywania wyników testów. Baza danych nie musi znajdować się na tym samym serwerze lub komputerze, z którego działa Pulpit Pa11y.
 
-Pa11y Dashboard uses [puppeteer](https://www.npmjs.com/package/puppeteer) to create a headless instance of the Chromium browser in order to run the tests. On certain environments this may require additional dependencies to be installed. For example, in Debian/Ubuntu systems you may need to install the `libnss3` and `libgconf-2-4` libraries in order to be able to run tests on Pa11y Dashboard. Please refer to the documentation from your provider for details on how to do this.
+Pa11y Dashboard używa [puppeteer](https://www.npmjs.com/package/puppeteer) do stworzenia bezgłowej instancji przeglądarki Chromium w celu przeprowadzenia testów. W niektórych środowiskach może to wymagać zainstalowania dodatkowych zależności. Na przykład w systemach Debian/Ubuntu może być konieczne zainstalowanie bibliotek `libnss3` i `libgconf-2-4`, aby móc uruchamiać testy na Pa11y Dashboard. Aby uzyskać szczegółowe informacje, jak to zrobić, zapoznaj się z dokumentacją dostawcy.
 
-## Setting up Pa11y Dashboard
 
-In order to run Pa11y Dashboard, we recommend cloning this repository locally:
+## Konfigurowanie pulpitu Pa11y
+
+Aby uruchomić Pa11y Dashboard, zalecamy sklonowanie tego repozytorium lokalnie:
 
 ```sh
 git clone https://github.com/pa11y/pa11y-dashboard.git
 ```
 
-Then installing the dependencies:
+Następnie zainstaluj zależności:
 
 ```sh
 cd pa11y-dashboard
 npm install
 ```
 
-### Installing MongoDB
+### Instalacja MongoDB
 
-Instructions for installing and running MongoDB are outside the scope of this document. When in doubt, please refer to the [MongoDB installation instructions](https://docs.mongodb.com/manual/installation/) for details of how to install and run MongoDB on your specific operating system. An example of the installation and configuration process for macOS follows.
+Instrukcje dotyczące instalowania i uruchamiania MongoDB wykraczają poza zakres tego dokumentu. W razie wątpliwości zapoznaj się z [instrukcją instalacji MongoDB](https://docs.mongodb.com/manual/installation/) aby uzyskać szczegółowe informacje o tym, jak zainstalować i uruchomić MongoDB w swoim systemie operacyjnym. Poniżej przedstawiono przykład procesu instalacji i konfiguracji systemu macOS.
 
-Pa11y Dashboard currently uses version 3 of the Node.js MongoDB driver, which means that [only MongoDB servers of versions 4.4 or older are supported](https://docs.mongodb.com/drivers/node/current/compatibility/#mongodb-compatibility). Please ensure that your MongoDB server fills the requirements before trying to run Pa11y Dashboard.
+Pa11y Dashboard korzysta obecnie z wersji 3 sterownika MongoDB Node.js, co oznacza, że [tylko serwery MongoDB w wersji 4.4 lub starszej](https://docs.mongodb.com/drivers/node/current/compatibility/#mongodb-compatibility). Przed próbą uruchomienia Pa11y Dashboard upewnij się, że Twój serwer MongoDB spełnia wymagania.
 
-#### Example MongoDB installation for macOS
+#### Przykładowa instalacja MongoDB dla systemu macOS
 
-On recent versions of macOS (10.13 or later), you can use [Homebrew](https://brew.sh/) to install MongoDB Community Edition. More recent versions of MongoDB are untested and unsupported.
+W najnowszych wersjach systemu macOS (10.13 lub nowszej) możesz użyć [Homebrew](https://brew.sh/), aby zainstalować MongoDB Community Edition. Nowsze wersje MongoDB są nieprzetestowane i nie są obsługiwane.
 
-Tap the MongoDB Homebrew Tap:
+Stuknij w MongoDB Homebrew:
 
 ```sh
 brew tap mongodb/brew
 ```
 
-Install a supported Community version of MongoDB:
+Zainstaluj obsługiwaną społecznościową wersję MongoDB:
 
 ```sh
 brew install mongodb-community@4.4
 ```
 
-Start the MongoDB server:
+Uruchom serwer MongoDB:
 
 ```sh
 brew services start mongodb/brew/mongodb-community@4.4
 ```
 
-Check that the service has started properly:
+Sprawdź, czy usługa została poprawnie uruchomiona:
 
 ```sh
 $ brew services list
@@ -73,29 +74,29 @@ Name              Status  User       Plist
 mongodb-community started pa11y      /Users/pa11y/Library/LaunchAgents/homebrew.mxcl.mongodb-community.plist
 ```
 
-### Configuring Pa11y Dashboard
+### Konfigurowanie pulpitu Pa11y
 
-The last step before being able to run Pa11y Dashboard is to define a configuration for it. This can be done in two ways:
+Ostatnim krokiem przed uruchomieniem Pa11y Dashboard jest zdefiniowanie dla niego konfiguracji. Można to zrobić na dwa sposoby:
 
-#### Option 1: Using environment variables
+#### Opcja 1: Używanie zmiennych środowiskowych
 
-Each configuration can be set with an environment variable rather than a config file. For example to run the application on port `8080` you can use the following:
+Każdą konfigurację można ustawić za pomocą zmiennej środowiskowej, a nie pliku konfiguracyjnego. Na przykład, aby uruchomić aplikację na porcie`8080`, możesz użyć następujących opcji:
 
 ```sh
 PORT=8080 node index.js
 ```
 
-The [available configurations](#configurations) are documented in the next section.
+[Dostępne konfiguracje](#konfiguracje) są udokumentowane w następnej sekcji.
 
-#### Option 2: Using config files
+#### Opcja 2: Korzystanie z plików konfiguracyjnych
 
-You can store the configuration for Pa11y Dashboard on a JSON file. You can use a different configuration file for each environment you're planning to run Pa11y Dashboard on. You can choose a specific environment to run the application from by setting the `NODE_ENV` environment variable:
+Możesz zapisać konfigurację Pa11y Dashboard w pliku JSON. Możesz użyć różnych plików konfiguracyjnych dla każdego środowiska, w którym planujesz uruchomić Pa11y Dashboard. Możesz wybrać konkretne środowisko do uruchomienia aplikacji, ustawiając zmienną środowiskową `NODE_ENV`:
 
 ```sh
 NODE_ENV=development node index.js
 ```
 
-Three example files are provided in this repository, you can copy and customise them to your liking:
+W tym repozytorium znajdują się trzy przykładowe pliki, które można skopiować i dostosować do własnych upodobań:
 
 ```sh
 cp config/development.sample.json config/development.json
@@ -103,94 +104,92 @@ cp config/production.sample.json config/production.json
 cp config/test.sample.json config/test.json
 ```
 
-The [available configurations](#configurations) are documented in the next section.
+[Dostępne konfiguracje](#konfiguracje) są udokumentowane w następnej sekcji.
 
-If you run into problems, check the [troubleshooting guide][#troubleshooting].
+Jeśli napotkasz problemy, sprawdź [przewodnik rozwiązywania problemów][#rozwiazywanie-problemow].
 
-## Configurations
-
-The boot configurations for Pa11y Dashboard are as follows. Look at the sample JSON files in the repo for example usage.
+## Konfiguracje
 
 ### port
 
-*(number)* The port to run the application on. Set via a config file or the `PORT` environment variable.
+*(liczba)* Port, na którym ma zostać uruchomiona aplikacja. Ustaw za pomocą pliku konfiguracyjnego lub zmiennej środowiskowej `PORT`.
 
 ### noindex
 
-*(boolean)* If set to `true` (default), the dashboard will not be indexed by search engines. Set to `false` to allow indexing. Set via a config file or the `NOINDEX` environment variable.
+*(boolean)* Jeśli ustawione na `true` (domyślnie), pulpit nie będzie indeksowany przez wyszukiwarki. Ustaw `false`, aby zezwolić na indeksowanie. Ustaw za pomocą pliku konfiguracyjnego lub zmiennej środowiskowej `NOINDEX`.
 
 ### readonly
 
-*(boolean)* If set to `true`, users will not be able to add, delete or run URLs (defaults to `false`). Set via a config file or the `READONLY` environment variable.
+*(boolean)* Jeśli ustawione na `true`, użytkownicy nie będą mogli dodawać, usuwać ani uruchamiać adresów URL (domyślnie `false`). Ustaw za pomocą pliku konfiguracyjnego lub zmiennej środowiskowej `READONLY`.
 
 ### siteMessage
 
-*(string)* A message to display prominently on the site home page. Defaults to `null`.
+*(string)* Wiadomość, która ma być wyświetlana w widocznym miejscu na stronie głównej witryny. Domyślnie `null`.
 
 ### webservice
 
-This can either be an object containing [Pa11y Webservice configurations][pa11y-webservice-config], or a string which is the base URL of a [Pa11y Webservice][pa11y-webservice] instance you are running separately. If using environment variables, prefix the webservice vars with `WEBSERVICE_`.
+Może to być obiekt zawierający [konfiguracje Pa11y Webservice][pa11y-webservice-config] lub ciąg będący podstawowym adresem URL instancji [Pa11y Webservice][pa11y-webservice], którą uruchamiasz oddzielnie. Jeśli używasz zmiennych środowiskowych, poprzedź vars usługi sieci Web prefiksem `WEBSERVICE_`.
 
-## Contributing
+## Współpraca i wkład
 
-There are many ways to contribute to Pa11y Dashboard, we cover these in the [contributing guide](CONTRIBUTING.md) for this repo.
+Istnieje wiele sposobów wniesienia wkładu do Pa11y Dashboard, omówimy je w [przewodniku dotyczącym wkładu](CONTRIBUTING.md) dla tego repozytorium.
 
-If you're ready to contribute some code, you'll need to clone the repo and get set up as outlined in the [setup guide](#setup). You'll then need to start the application in test mode with:
+Jeśli chcesz udostępnić trochę kodu, musisz sklonować repozytorium i skonfigurować zgodnie z opisem w [przewodniku konfiguracji](#setup). YNastępnie musisz uruchomić aplikację w trybie testowym za pomocą:
 
 ```sh
 NODE_ENV=test node index.js
 ```
 
-You'll now be able to run the following commands:
+Będziesz teraz mógł uruchamiać następujące polecenia:
 
 ```sh
-make verify              # Verify all of the code (ESLint)
-make test                # Run all tests
-make test-integration    # Run the integration tests
+make verify              # Zweryfikuj cały kod (ESLint)
+make test                # Uruchom wszystkie testy
+make test-integration    # Uruchom testy integracyjne
 ```
 
-To compile the client-side JavaScript and CSS, you'll need the following commands. Compiled code is committed to the repository.
+Aby skompilować JavaScript i CSS po stronie klienta, potrzebujesz następujących poleceń. Skompilowany kod jest przekazywany do repozytorium.
 
 ```sh
-make less    # Compile the site CSS from LESS files
-make uglify  # Compile and uglify the client-side JavaScript
+make less    # Skompiluj CSS strony z plików LESS
+make uglify  # Skompiluj i zbuguj JavaScript po stronie klienta
 ```
 
-## Useful resources
+## Użyteczne zasoby
 
-* [Setting up An Accessibility Dashboard from Scratch with Pa11y on DigitalOcean](https://una.im/pa11y-dash/)
-* [Monitoring Web Accessibility Compliance With Pa11y Dashboard](https://www.lullabot.com/articles/monitoring-web-accessibility-compliance-with-pa11y-dashboard)
+- [Konfigurowanie pulpitu dostępności od podstaw za pomocą Pa11y na DigitalOcean](https://una.im/pa11y-dash/)
+- [Monitorowanie zgodności z dostępnością internmetową za pomocą Pa11y Dashboard](https://www.lullabot.com/articles/monitoring-web-accessibility-compliance-with-pa11y-dashboard)
 
-## Troubleshooting
+## Rozwiązywanie problemów
 
-### Common issues
+### Typowe problemy
 
-* `500` errors or `Could not connect to pa11y-webservice` messages are often related to MongoDB. Ensure that you have the [appropriate version of MongoDB][#installing-mongodb] installed, and that it's running - it doesn't always start automatically.
-* Error messages saying that pa11y-webservice isn't running may be due to dependency installation problems. Try deleting your `pa11y-dashboard/node_modules` directory and running `npm install` again.
+- Błędy `500` lub `Could not connect to pa11y-webservice`: komunikaty są często związane z MongoDB. Upewnij się, że masz zainstalowaną [odpowiednią wersję MongoDB][#installing-mongodb] i że baza działa — nie zawsze uruchamia się automatycznie.
+- Komunikaty o błędach mówiące, że `pa11y-webservice isn't running`, mogą być spowodowane problemami z instalacją zależności. Spróbuj usunąć  katalog`pa11y-dashboard/node_modules` i uruchomić ponownie `npm install`.
 
-### Create a new issue
+### Utwórz nowy problem
 
-Check the [issue tracker][issues] for similar issues before creating a new one. If the problem that you're experiencing is not covered by one of the existing issues, you can [create a new issue][create-issue]. Please include your node.js and MongoDB version numbers, and your operating system, as well as any information that may be useful in debugging the issue.
+Sprawdź [issue tracker][issues] pod kątem podobnych problemów przed utworzeniem nowego. Jeśli występujący problem nie jest objęty jednym z istniejących problemów, możesz [utworzyć nowy problem][create-issue]. Podaj numery wersji node.js i MongoDB oraz swój system operacyjny, a także wszelkie informacje, które mogą być przydatne podczas debugowania problemu.
 
-## Support and Migration
+## Wsparcie i migracja
 
-Pa11y Dashboard major versions are normally supported for 6 months after their last minor release. This means that patch-level changes will be added and bugs will be fixed. The table below outlines the end-of-support dates for major versions, and the last minor release for that version.
+Główne wersje Pa11y Dashboard są zwykle obsługiwane przez 6 miesięcy od ich ostatniego wydania pomocniczego. Oznacza to, że zostaną dodane zmiany na poziomie łatek, a błędy zostaną naprawione. W poniższej tabeli przedstawiono daty zakończenia wsparcia dla wersji głównych oraz ostatnią wersję pomocniczą dla tej wersji.
 
-We also maintain a [migration guide](MIGRATION.md) to help you migrate.
+Twórca utrzymuje również [przewodnik migracji](MIGRATION.md), który pomoże Ci przeprowadzić migrację.
 
-| :grey_question: | Major Version | Last Minor Release | Node.js Versions | Support End Date |
-| :-------------- | :------------ | :----------------- | :--------------- | :--------------- |
-| :heart:         | 4             | N/A                | 12+              | N/A              |
-| :hourglass:     | 3             | 3.3.0              | 8+               | 2022-05-26       |
-| :skull:         | 2             | 2.4.2              | 4+               | 2020-01-16       |
-| :skull:         | 1             | 1.12               | 0.10–6           | 2016-12-05       |
+| :grey_question: | Wersja główna | Ostatnie mniejsze wydanie | Wersje Node.js | koiec wsparcia |
+| :-------------- | :------------ | :------------------------ | :------------- | :------------- |
+| :heart:         | 4             | N/A                       | 12+            | N/D            |
+| :hourglass:     | 3             | 3.3.0                     | 8+             | 2022-05-26     |
+| :skull:         | 2             | 2.4.2                     | 4+             | 2020-01-16     |
+| :skull:         | 1             | 1.12                      | 0.10–6         | 2016-12-05     |
 
-If you're opening issues related to these, please mention the version that the issue relates to.
+Jeśli otwierasz problemy z nimi związane, podaj wersję, której dotyczy problem.
 
 ## License
 
-Pa11y Dashboard is licensed under the [GNU General Public License 3.0][info-license].<br/>
-Copyright &copy; 2013–2020, Team Pa11y and contributors
+Pa11y Dashboard jest objęty licencją [GNU General Public License 3.0][info-license].<br/>
+Copyright &copy; 2013–2020,  Zespół Pa11y i współpracownicy
 
 [gpl]: http://www.gnu.org/licenses/gpl-3.0.html
 [mongo]: http://www.mongodb.org/
@@ -206,3 +205,7 @@ Copyright &copy; 2013–2020, Team Pa11y and contributors
 [shield-node]: https://img.shields.io/node/v/pa11y/pa11y-dashboard.svg
 [shield-build]: https://img.shields.io/travis/pa11y/pa11y-dashboard/master.svg
 [shield-license]: https://img.shields.io/badge/license-GPL%203.0-blue.svg
+
+<!--
+# Inne
+lang - określany w app.js -->

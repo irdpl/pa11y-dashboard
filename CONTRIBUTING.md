@@ -1,16 +1,16 @@
 
-Contributing Guide
+Przewodnik współtworzenia
 ==================
 
-Thanks for getting involved :tada:
+Dzięki za zaangażowanie :tada:
 
-The Pa11y team loves to see new contributors, and we strive to provide a welcoming and inclusive environment. We ask that all contributors read and follow [our code of conduct][code-of-conduct] before joining. If you represent an organisation, then you might find our [guide for companies][companies] helpful.
+Zespół Pa11y uwielbia widzieć nowych współpracowników i staramy się zapewnić przyjazne i integracyjne środowisko. Prosimy, aby wszyscy współpracownicy przeczytali [nasz kodeks postępowania][code-of-conduct] i przestrzegali go. Jeśli reprezentujesz organizację, pomocny może się okazać [nasz przewodnik dla firm][companies].
 
-Our website outlines the many ways that you can contribute to Pa11y:
+Nasza strona internetowa przedstawia wiele sposobów, w jakie możesz przyczynić się do Pa11y:
 
-  - [Help us to talk to our users][communications]
-  - [Help us out with design][designers]
-  - [Help us with our code][developers]
+  - [Pomóż nam rozmawiać z naszymi użytkownikami][communications]
+  - [Pomóż nam w projektowaniu][designers]
+  - [Pomóż nam z naszym kodem][developers]
 
 
 
@@ -19,3 +19,4 @@ Our website outlines the many ways that you can contribute to Pa11y:
 [companies]: http://pa11y.org/contributing/companies/
 [designers]: http://pa11y.org/contributing/designers/
 [developers]: http://pa11y.org/contributing/developers/
+
